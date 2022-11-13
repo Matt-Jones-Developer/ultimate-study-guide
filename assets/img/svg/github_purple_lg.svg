@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 105 105"
+   width="105"
+   height="105"
+   version="1.1"
+   id="svg890"
+   sodipodi:docname="github_purple_lg.svg"
+   inkscape:version="1.2.1 (9c6d41e, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs894" />
+  <sodipodi:namedview
+     id="namedview892"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.4406384"
+     inkscape:cx="1.0412051"
+     inkscape:cy="65.942987"
+     inkscape:window-width="1309"
+     inkscape:window-height="456"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg890" />
+  <linearGradient
+     id="KpzH_ttTMIjq8dhx1zD2pa"
+     x1="30.999001"
+     x2="30.999001"
+     y1="16"
+     y2="55.341999"
+     gradientUnits="userSpaceOnUse"
+     spreadMethod="reflect">
+    <stop
+       offset="0"
+       stop-color="#6dc7ff"
+       id="stop876" />
+    <stop
+       offset="1"
+       stop-color="#e6abff"
+       id="stop878" />
+  </linearGradient>
+  <linearGradient
+     id="KpzH_ttTMIjq8dhx1zD2pb"
+     x1="32"
+     x2="32"
+     y1="5"
+     y2="59.167"
+     gradientUnits="userSpaceOnUse"
+     spreadMethod="reflect">
+    <stop
+       offset="0"
+       stop-color="#1a6dff"
+       id="stop883" />
+    <stop
+       offset="1"
+       stop-color="#c822ff"
+       id="stop885" />
+  </linearGradient>
+  <g
+     id="g1015"
+     transform="matrix(2.0192308,0,0,2.0192308,-12.115385,-12.115385)">
+    <path
+       fill="url(#KpzH_ttTMIjq8dhx1zD2pa)"
+       d="m 25.008,56.007 c -0.003,-0.368 -0.006,-1.962 -0.009,-3.454 l -0.003,-1.55 C 18.267,51.918 16.638,47.223 16.62,47.173 15.686,44.805 14.409,44.128 14.354,44.1 L 14.23,44.028 c -0.463,-0.316 -1.691,-1.157 -1.342,-2.263 0.315,-0.997 1.536,-1.1 2.091,-1.082 3.074,0.215 4.63,2.978 4.694,3.095 1.569,2.689 3.964,2.411 5.509,1.844 0.144,-0.688 0.367,-1.32 0.659,-1.878 C 20.885,42.865 15.27,40.229 15.27,30.64 c 0,-2.633 0.82,-4.96 2.441,-6.929 -0.362,-1.206 -0.774,-3.666 0.446,-6.765 l 0.174,-0.442 0.452,-0.144 c 0.416,-0.137 2.688,-0.624 7.359,2.433 1.928,-0.494 3.969,-0.749 6.074,-0.759 2.115,0.01 4.158,0.265 6.09,0.759 4.667,-3.058 6.934,-2.565 7.351,-2.433 l 0.451,0.145 0.174,0.44 c 1.225,3.098 0.813,5.559 0.451,6.766 1.618,1.963 2.438,4.291 2.438,6.929 0,9.591 -5.621,12.219 -10.588,13.087 0.563,1.065 0.868,2.402 0.868,3.878 0,1.683 -0.007,7.204 -0.015,8.402 l -2,-0.014 c 0.008,-1.196 0.015,-6.708 0.015,-8.389 0,-2.442 -0.943,-3.522 -1.35,-3.874 l -1.73,-1.497 2.274,-0.253 C 41.85,41.402 47.17,39.601 47.17,30.639 c 0,-2.33 -0.777,-4.361 -2.31,-6.036 l -0.43,-0.469 0.242,-0.587 c 0.166,-0.401 0.894,-2.442 -0.043,-5.291 -0.758,0.045 -2.568,0.402 -5.584,2.447 l -0.384,0.259 -0.445,-0.123 c -1.863,-0.518 -3.938,-0.796 -6.001,-0.806 -2.052,0.01 -4.124,0.288 -5.984,0.806 l -0.445,0.123 -0.383,-0.259 c -3.019,-2.044 -4.833,-2.404 -5.594,-2.449 -0.935,2.851 -0.206,4.892 -0.04,5.293 l 0.242,0.587 -0.429,0.469 c -1.536,1.681 -2.314,3.712 -2.314,6.036 0,8.958 5.31,10.77 10.504,11.361 l 2.252,0.256 -1.708,1.49 c -0.372,0.325 -1.03,1.112 -1.254,2.727 l -0.075,0.549 -0.506,0.227 c -1.321,0.592 -5.839,2.162 -8.548,-2.485 -0.015,-0.025 -0.544,-0.945 -1.502,-1.557 0.646,0.639 1.433,1.673 2.068,3.287 0.066,0.19 1.357,3.622 7.28,2.339 l 1.206,-0.262 0.012,3.978 c 0.003,1.487 0.006,3.076 0.009,3.444 z"
+       id="path881"
+       style="fill:url(#KpzH_ttTMIjq8dhx1zD2pa)" />
+    <path
+       fill="url(#KpzH_ttTMIjq8dhx1zD2pb)"
+       d="M 32,58 C 17.663,58 6,46.337 6,32 6,17.663 17.663,6 32,6 46.337,6 58,17.663 58,32 58,46.337 46.337,58 32,58 Z M 32,8 C 18.767,8 8,18.767 8,32 8,45.233 18.767,56 32,56 45.233,56 56,45.233 56,32 56,18.767 45.233,8 32,8 Z"
+       id="path888"
+       style="fill:url(#KpzH_ttTMIjq8dhx1zD2pb)" />
+  </g>
+</svg>

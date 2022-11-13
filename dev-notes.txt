@@ -1,0 +1,16 @@
+// a place for all the development ideas, todos and more! (I probably should use 'issues' in GitHub)
+
+TODO:
+
+# Add the custom styled JS 'to do list' code 
+# DONE: Create a custom CSS stylesheet for the todo
+# Verify that it's allowed by the tutor!
+
+# add animations - fade in title footer - slide in containers etc 
+# Add all the topics that we have discussed so far - rewrite the notes and provide more info on each topic
+# Add handy links to W3Schools to quickly work on anything I need to improve on, or practice
+
+# Develop a way to 'accordian' open/close each section's container - to stop the webpage getting too long.
+
+
+# Add anything else that is required to pass the assignment 
