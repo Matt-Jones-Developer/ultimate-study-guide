@@ -1,0 +1,630 @@
+/*  study guide css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    background: #333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    color: #F9F9FE;
+    width: 100vw;
+}
+
+#top {
+    background-color: #000024;
+    margin: 0 auto;
+    /* stop text overflow */
+    /* min-height: 20rem; */
+    padding: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+
+.header-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-title {
+    /* hacky and wont work with responsive 
+    "I cant yet, but I will!" */
+    padding-left: 5rem;
+    /*  why wont margin 0 auto centre this? 
+    because we dont want to move the rocket over! */
+    /* margin: auto; */
+}
+
+#rocket_icn {
+    /* this is inside an unlabelled div -
+    may be why we cant treat the margin as a unified object? */
+    width: 5rem;
+    /* icn space */
+    float: right;
+    padding-top: 4rem;
+}
+
+.header-btm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    height: 5rem;
+}
+
+.header-welcome {
+    /* position: relative; */
+    /* float: right; */
+    /* padding: 2rem; */
+    height: 4rem;
+    /* padding-left: 15rem; */
+    /* padding-top: 8rem; */
+    /* border: 1px solid red; */
+}
+
+.header-searchbar {
+    padding-top: 4rem;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    background-color: #555;
+    border-radius: .5rem;
+    border: 0px;
+    color: #fff;
+    margin: .5rem 0;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5FCFBE;
+}
+
+h1 {
+    font-size: 4.4rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #5FCFBE;
+}
+
+ul {
+    /* list-style: none; */
+    padding-left: 1.4rem;
+}
+
+/* li {
+    text-decoration: none;
+} */
+
+#ul-skills {
+    padding: .3rem 1.5rem;
+    font-size: 16px;
+}
+
+#ul-skills li {
+    list-style-type: style;
+    list-style: disc;
+}
+
+img {
+    width: 100%;
+    object-fit: scale-down;
+}
+
+main {
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 5px;
+} 
+
+/* .parallax-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/img/png/binary_hero.png);
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    object-fit: fill;
+    margin: 2rem 0;
+}
+
+.parallax-img::after {
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 50%;
+    z-index: -1;
+}  */
+
+.hero-top {
+    margin: 2rem;
+    padding: 2rem;
+    /* line-height: 5.5rem; */
+}
+.hero-top h1 {
+    font-size: 100px;
+    padding-left: 4rem;
+}
+
+.hero-top h2 {
+    float: right;
+    padding-right: 4rem;
+    font-size: 40px;
+}
+
+.hero-bottom {
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: .3rem;
+    padding: 2rem 4rem;
+    /* padding-bottom: 2rem; */
+    padding-left: 5rem;
+}
+
+hr {
+    border: 1px solid white;
+}
+
+code {
+    font-size: 16px;
+}
+
+.flex-container {
+    display: flex;
+    /* set ui items sideways */
+    justify-content: space-between;
+    /* center cross axis */
+    align-items: center;
+    /* center vertical (A) */
+    position: relative;
+    height: 100%;
+    max-width: 1000px;
+    padding: 0 4rem;
+    margin: 8rem auto;
+    margin-bottom: 2rem;
+}
+
+.box {
+    width: 170px;
+    background-color: #81888B;
+    box-shadow: 15px 15px 0 
+    rgba(64, 63, 63, 0.8);
+    /* svg issue here? */
+    /* cursor: pointer; */
+    border-radius: 1rem;
+    padding-top: 5px;
+}
+
+/* .box:active {
+    color: #333;
+    box-shadow: 10px 10px 0 
+    rgba(30, 30, 30, 0.6);
+} */
+
+.boxes .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    /* border: 1px solid red; */
+}
+
+/* #page {
+    display: flex;
+
+} */
+
+/* #sideBar {
+    width: 100px;
+    background: red;
+  } */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 10px 0 rgba(30, 30, 30, 0.8);
+    background-color: #41415B;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 4rem;
+    /* width: 100%; */
+    /* transition: 0.5s; */
+}
+
+.container h3 {
+    font-size: 24px;
+}
+
+.btm-container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* border: 1px solid red; */
+}
+
+.bio-container {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    margin: 2rem;
+    padding: 2rem;
+    background-color: transparent;
+    width: 50%;
+    /* border: 1px solid red; */
+}
+
+.card-container {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    /* margin: 2rem; */
+    box-shadow: 0 5px 10px 0 rgba(30, 30, 30, 0.8);
+    background-color: #41415B;
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 2rem;
+    transition: 0.3s;
+    /* border: 1px solid red; */
+}
+
+.card {
+    /* background-color: #81888B; */
+    background-color: transparent;
+    /* width: 100%; */
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+#card-icn {
+    float: right;
+    width: 50px;
+    margin: 0;
+}
+
+.card:hover {
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.3);
+    background-color: #81888B;
+}
+
+.quote {
+    padding: 4rem;
+    text-align: center;
+    height: auto;
+    /* width: 50%; */
+    /* vertical-align: middle; */
+    /* width: 600px; */
+    /* border: 1px solid red; */
+}
+
+.quote h1 {
+    font-size: 48px;
+}
+
+.outer-container {
+    /* height: 48rem; */
+    width: 50%;
+    margin-top: 2rem;
+    margin: 4rem;
+    padding: 2rem;
+    float: right;
+    /* border: 1px solid red; */
+}
+
+.skills-container {
+    box-shadow: 0 5px 10px 0 rgba(30, 30, 30, 0.8);
+    background-color: #E7B261;
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    /* max-height: 495px; */
+    /* border: 1px solid red; */
+}
+
+.skills-container img {
+    float: right;
+    width: 50px;
+    margin: 0;
+}
+
+.skills-container h2 {
+    font-weight: 600;
+}
+
+.skills-container p {
+    font-size: 1.6rem;
+}
+
+
+.cols {
+    -webkit-column-count: 3;
+    column-count: 3;
+    column-gap: 4rem;
+    column-rule: 1px groove #5FCFBE;
+    /* position: relative; */
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+}
+
+/* vertical fix */
+.cols div:first-child,
+p:first-child,
+li:first-child {
+    margin: 0;
+}
+
+.cols h3 {
+    column-span: 1;
+}
+
+.cols p {
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+section {
+    color: #fff;
+    /* height: 75vh; */
+    margin: 0;
+    margin-top: 4rem;
+    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+section h1 {
+    font-family: monospace;
+    font-size: 42px;
+}
+
+section h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+section h2:before {
+    content: ' \0023';
+}
+
+.topic-title {
+    font-size: 30px;
+}
+
+#html {background-color: #5FCFBE;}
+#css {background-color: #F1AF50;}
+#github{background-color: #81888B;}
+#javascript {background-color: #EA655D;}
+
+#html h1, 
+#css h1,
+#github h1,
+#javascript h1 {
+    font-size: 42px;
+    font-family: monospace;
+    font-weight: 300;
+}
+
+#css h1:after {
+    content: ' \007B';
+}
+
+#css-close:before {
+    content: ' \007D';
+    font-family: monospace;
+    font-size: 42px;
+}
+
+#github {
+    margin-top: 2rem;
+    margin-bottom: 0px;
+    padding-bottom: 4.2rem;
+}
+
+#github h1::before {
+    content: ' \0040';
+}
+
+#git-close {
+    width: 50px;
+    margin: 0;
+    padding-top: 1rem;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+#javascript {
+    padding-bottom: 6rem;
+}
+#javascript h1:after {
+    content: ' \003D \003E';
+}
+
+#js-close:before {
+    content: ' \003B';
+    font-family: monospace;
+    font-size: 42px;
+}
+.footer {
+    background-color: #000024;
+    display: block;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    margin: 0;
+}
+
+.footer p {
+    padding-top: 4rem;
+}
+
+.footer em {
+    font-size: 10px;
+}
+
+.footer strong {
+    color: #EA655D;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.ul-icons {
+    display: inline-flex;
+    position: relative;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.ul-icons > li {
+    display: inline-block;
+    padding: 1rem 1rem;
+}
+
+@media (max-width: 1000px) {
+
+    .header-title h3 {
+        font-size: 12px;
+    }
+
+    .header-welcome h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero-top h1 {
+        padding: 1rem;
+        font-size: 56px;
+    }
+
+    .hero-top h2 {
+        padding-right: 0;
+        font-size: 20px;
+    }
+
+    .flex-container {
+        display: block;
+    }
+
+    .hero-bottom h2 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 16px;
+    } 
+
+    .cols {
+        -webkit-column-count: 1;
+        column-count: 1;
+        column-gap: 1rem;
+    }
+
+    .btm-container,
+    .bio-container {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .card-container {
+        width: auto;
+    }
+
+    .quote h1 {
+        padding-bottom: 2rem;
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .outer-container,
+    .skills-container {
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 320px) {
+
+    /* .hero-top h1 {
+        padding-left: .5rem;
+        font-size: 48px;
+    }
+
+    .hero-top h2 {
+        padding-right: 0;
+        font-size: 18px;
+    }
+
+    .hero-bottom h2 {
+        font-size: 16px;
+    } */
+
+    .boxes {
+        display: block;
+    }
+
+    .flex-container {
+        display: block;
+        padding: 2rem;
+    }
+
+    .box {
+        margin: 5px;
+    }
+
+    .outer-container {
+        margin-bottom: 6rem;
+    }
+}
+
+/* @media (max-width: 768px) {
+    .container .top-section-container
+    .bio-container .card-container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .boxes .top-section-container {
+        display: block;
+        text-align: center;
+    }
+} */
