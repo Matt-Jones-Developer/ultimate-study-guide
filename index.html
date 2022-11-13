@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,800,900'">
+        <link href="style.css" rel="stylesheet">
+        <title>Study Guide</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="top">
+            <div class="header-top">
+                <div class="header-title">
+                    <h2>edX Bootcamp</h2>
+                    <h1>Study Guide</h1>
+                    <h3><em>"If you put your mind to it, you can achieve anything."</em></h3>
+                </div>
+                <div>
+                    <img src="./assets/img/icn/icn_rocket_wht.svg" alt="rocket_icon" id="rocket_icn">
+                </div>
+            </div>
+            <div class="header-btm">
+                <!-- header-welcome and searchbar -->
+                <div class="header-welcome">
+                    <h2 id="user">Welcome, User!</h2>
+                    <button>Change User</button>
+                </div>
+                <div class="header-searchbar">searchbar goes here</div>
+            </div>
+        </header>
+        <main>
+            <!-- hero section -->
+            <div class="hero-top">
+                <h1>learn, build, repeat.</h1>
+                <h2>afterburners on, let's do this.</h2>
+            </div>
+            <!-- logos -->
+            <div class="boxes">
+                <div class="flex-container">
+                    <!-- if buttons - add <a href's> -->
+                    <div class="box">
+                        <img src="./assets/img/svg/html5_lg.svg" alt="html5-icon">
+                    </div>
+                    <div class="box">
+                        <img src="./assets/img/svg/css3_lg.svg" alt="css-icon">
+                    </div>
+                    <div class="box">
+                        <img src="./assets/img/svg/github_purple_lg.svg" alt="github-icon">
+                    </div>
+                    <div class="box">
+                        <img src="./assets/img/svg/js_lg.svg" alt="js-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="hero-bottom">
+                <h2>Using HTML, CSS & JavaScript; with version control courtesy of GitHub.</h2>
+                <br>
+                <br>
+            </div>
+            <!-- need to blend or parallax this and show it -->
+            <!-- <div class="parallax-img">
+                <h2>Seek and you shall find...</h2>
+            </div> -->
+            <!-- 4 sections/box shadows -->
+            <div class="boxes">
+                <!-- topics -->
+                <!-- html guide -->
+                <section id="html">
+                    <!-- entities -->
+                    <h1>&lt;html&gt;</h1>
+                    <h2 class="topic-title"> Topics</h2><hr><br>
+                    <div class="container">
+                        <!-- must be a single div for rules to show -->
+                        <!-- perhaps we need 3 topics for col? (so all content separates evenly over 3 lines with correct headings at top) -->
+                        <!-- i.e - cols 1-3: html / head + body(short) / elements - cols (next row) 1-3 attributes / -->
+                        <div class="cols">
+                            <!-- all the html topics  -->
+                            <h3><a href="https://en.wikipedia.org/wiki/HTML">html</a></h3>
+                            <br>
+                            <p><code>&lt;HTML&gt;</code> stands for HyperText Markup Language.
+                            <br>
+                                HTML is one of the three cornerstone languages used in web development: HTML, CSS, and JS.
+                            <br>
+                            <br>
+                             <!-- example syntax -->
+                             <h3><a href="https://www.w3schools.com/html/html_basic.asp">Syntax</a></h3>
+                             <img src="./assets/img/png/snippets/html_example.png" alt="html code snippet">
+                            <br>
+                                HTML is used to create the structure of a webpage and is made up of 'elements' which work together
+                                 to provide content and the basic framework for all pages on the web. 
+                            <br>
+                            <br>
+                            <ul>
+                                <li>All HTML documents must start with a document type declaration: <code>&lt;!DOCTYPE html&gt;</code>.</li><br>
+                                <li>The HTML document itself begins with <code>&lt;html&gt;</code> and ends with <code>&lt;/html&gt;</code>.</li><br>
+                                <li>The visible part of the HTML document is between <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code>.</li><br>
+                            </ul>
+                                 HTML attributes provide additional information about HTML elements. (more them later!)
+                            <br>
+                            <br>
+                            </p>
+                            <p>An element is a type of content on a webpage. The following element types are commonly used 
+                                to add content to pages:
+                            </p>
+                            <br>
+                            <ul>
+                                <li>Text elements</li><br>
+                                <li>Image elements</li><br>
+                                <li>Header elements</li><br>
+                                <li>List elements</li><br>
+                            </ul>
+                            <br>
+                            <p>In addition to elements that can be seen on the page, elements are also used to 
+                                describe the content to browsers and other developers. These go in the head.
+                            </p>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h3><a href="https://www.w3schools.com/tags/tag_head.asp">Head</a></h3>
+                            <br>
+                            <p>The <code>&lt;head&gt;</code> element is like the 'back-end' element that contains all the information
+                                 about the webpage that a browser uses.
+                            <br>
+                            <br>
+                                The head element contains information, or metadata, that helps the browser to render the page correctly. 
+                                Elements included within the <code>&lt;head&gt;</code> are not visible when a user looks at a webpage.
+                            </p>
+                            <br>
+                            <ul>
+                                <li>The <code>&lt;base&gt;</code> element defines the base URL for a webpage.</li><br>
+                                <li>The <code>&lt;link&gt;</code> element connects an external resource to the HTML document.</li><br>
+                                <li>The <code>&lt;meta&gt;</code> element defines metadata such as the character set, description, 
+                                    keywords, author, and viewport.</li><br>
+                                <li>The <code>&lt;script&gt;</code> element embeds client-side scripts in the HTML document. 
+                                    For example the JavaScript file included in this webpage.</li><br>
+                            </ul>
+                            <h3><a href="https://www.w3schools.com/tags/tag_body.asp">Body</a></h3>
+                            <br>
+                            <p>The <code>&lt;body&gt;</code> element represents the visible content shown to the user.
+                            <br>
+                            <br>
+                                The body tag is a semantic, parent element, whereas a non-semantic, child element is, 
+                                for example, a <code>&lt;div&gt;</code>.
+                            <br>
+                            <br>
+                                Everything from the <code>&lt;header&gt;</code> to the <code>&lt;footer&gt;</code> live here.
+                            </p>
+                            <br>
+                            <h3><a href="https://www.w3schools.com/htmL/html_elements.asp">Elements</a></h3>
+                            <br>
+                            <p>HTML elements you can use to structure a webpage include:</p>
+                            <br>
+                            <ul>
+                                <li>The <code>&lt;header&gt;</code> element is the area that the top part of your webpage lives.
+                                The header is where you'd put your logo, navigation bar, and perhaps some user login or search bar features.
+                                <br>
+                                <img src="./assets/img/png/snippets/headings.png" alt="heading tag example">
+                                <br>
+                                </li>
+                                <li>The <code>&lt;div&gt;</code> element represents a non-semantic section or division and are very versatile.</li>
+                                <br>
+                                <li>The <code>&lt;h1 h2 h3 h4 h5 h6&gt;</code> elements represent the level of heading a given text block represents.</li>
+                                <br>
+                                <li>The <code>&lt;p&gt;</code> element represents a paragraph or chunk of text.</li>
+                                <br>
+                                <li>The <code>&lt;ul ol li&gt;</code> elements represent unordered lists, ordered lists, and list items. 
+                                </li>
+                                <br>
+                                <li>The <code>&lt;img&gt;</code> element contains information about images that are displayed on the webpage.
+                                <br>
+                                <br>
+                                <li>The <code>&lt;br&gt;</code> element creates a line of empty space, or a line break, between two blocks of content.</li>
+                                <br>
+                                <li>The <code>&lt;hr&gt;</code> element creates a horizontal rule line across your page.</li>
+                                <br>
+                                <li>The <code>&lt;em&gt;</code> element is to give emphasise to a word or set of words.</li>
+                                <br>
+                                <li>The <code>&lt;a&gt;</code> element (which stands for anchor) creates links to the same webpage or other webpages.</li>
+                                <br>
+                                <li>The <code>&lt;section&gt;</code> elements are semantic elements that define a section in a document that contains thematic content.</li>
+                            </ul>
+                            <br>
+                            <h3><a href="https://www.w3schools.com/htmL/html_attributes.asp">Attributes</a></h3>
+                            <br>
+                            <p>HTML attributes provide additional information about HTML elements.</p>
+                            <br>
+                            <ul>
+                                <li>All HTML elements have attributes</li><br>
+                                <li>Attributes usually come in name:value pairs such as name="value".</li><br>
+                                <li>This is how we can access and refine control over every single element on the page.</li>
+                                <br>
+                                <li>For example, the <code>&lt;img&gt;</code> element can contain various attributes;
+                                <br>
+                                <br>
+                                <li>The `src` attribute defines the location, or source, of the image file.</li> 
+                                <br>
+                                <li>The `alt` attribute contains a text string that describes the appearance and functionality of the image.
+                                <br> 
+                                <br>Word to the wise, this particular attribute cannot be viewed and is used to explain what <em>should be there</em>, if the image were 
+                                     to go missing, or be put in the wrong folder accidentally.
+                                <br>
+                                <br>If this happens, you'll see the images alt description text with a small 'missing image' icon.  
+                                <br>A better method for explaining the image (or anything really) as a user hovers over it, would be...
+                                </li> 
+                                <br>
+                                <li>The 'title' attribute can be used to provide a description as a user hovers over the image.</li>
+                                <br>
+                                <li>Another good example of an attribute is for the <code>&lt;a&gt;</code> tag; The 'href' attribute 
+                                    is vital for directing the anchor link to the correct destination.  Click on the element titles or the footer icons to see what I mean.</li>
+                            </ul>
+                            <br>
+                            <p>There is a ton of elements and attributes to know and read up on, you never know when they may be needed.
+                            <br>
+                            <br>
+                                A great resource for me has been w3schools! For example, whilst coding this page I looked up <code>&lt;code&gt;</code> !
+                            </p>
+                            <img src="./assets/img/png/snippets/code_tags.png" alt="code tag example">
+                            <br>
+                            <li>The <code>&lt;code&gt;</code> element is how we insert actual syntax into a webpage, to add examples of code or <code>&lt;code!&gt;</code> 
+                                without the html render showing whitespace where your tag should be, or breaking your code entirely!</li>
+                        </div>
+                    </div>
+                    <br>
+                    <h1>&lt;/html&gt;</h1>
+                </section>  
+                 <!-- css guide -->
+                 <section id="css">
+                    <!-- entities -->
+                    <h1>CSS</h1>
+                    <h2 class="topic-title"> Topics</h2><hr><br>
+                    <div class="container">
+                        <!-- must be a single div for rules to show -->
+                        <!-- perhaps we need 3 topics for col? (so all content separates evenly over 3 lines with correct headings at top) -->
+                        <!-- i.e - cols 1-3: html / head + body(short) / elements - cols (next row) 1-3 attributes / -->
+                        <div class="cols">
+                            <!-- all the css topics  -->
+                            <h3><a href="https://en.wikipedia.org/wiki/CSS">CSS</a></h3>
+                            <br>
+                            <p>CSS stands for Cascading StyleSheets, another programming language used by developers
+                                to define how webpage content is presented to users. It is probably my favourite language, after Python!
+                            <br>
+                            <br>
+                                Whereas HTML strictly handles the structure and content of a webpage, CSS defines the colors, aesthetics,
+                                visual layout, and organization of your webpage.
+                            </p>
+                            <br>
+                            <h3><a href="https://www.w3schools.com/Css/css_syntax.asp">Syntax</a></h3>
+                            <!-- example syntax -->
+                            <img src="./assets/img/png/snippets/css_example.png" alt="css code snippet">
+                            <br>
+                            <p>We use CSS to define style rules for specific elements of an HTML page and format them using a wide range of style
+                                options. Using selectors, we can add style to each and every element; like the header, body, headings and footer.
+                            </p>
+                            <br>
+                            <h3><a href="https://www.w3schools.com/tags/selector.asp">Selectors</a></h3>
+                            <br>
+                            <p>A selector defines the element or attributes to which the rules, or declarations, will apply: like (.div {}).
+                            </p>
+                            <br>
+                            <ul>
+                                <li>Combine two selectors into a single CSS rule with a comma, allowing the declarations to affect both selectors.
+                                </li>
+                                <li>A wild card symbol, or *. Declares that ALL of the elements on the page will have the same style properties.
+                                </li>
+                            </ul>
+                            <br>
+                            <br>
+                            <br>
+                            <h3><a href="https://www.w3schools.com/tags/selector.asp">Classes & ID's</a></h3>
+                            <img src="./assets/img/png/snippets/class_vs_id.png" alt="class and id selector example">
+                            <p>
+                                Notice how to access each type; a class starts with '.' <br> where as an id starts with '#'.
+                            </p>
+                            <br>
+                            <h3><a href="https://www.w3schools.com/tags/selector.asp">Margin & Padding</a></h3>
+                            <br>
+                            <ul>
+                                <li>A margin indicates how much space we want around the <em>outside</em> of an element.</li><br>
+                                <li>Padding indicates how much space we want around the content <em>inside</em> an element.</li><br>
+                                <li>Properties 'margin-left and margin-right: auto' allows to automatically centre the image regardless of screen width.</li><br>
+                                <br>
+                            </ul>
+                            <br>
+                            <h3><a href="https://www.w3schools.com/attributes/text-align.asp">Text-align</a></h3>
+                            <br>
+                            <ul>
+                                <li>The text-align property is one way to center a title or heading on a webpage.</li><br>
+                                <li>Add our stylesheet to the html via: <code>&lt;link rel="stylesheet" href="./assets/style.css"&gt;</code> tags.</li><br>
+                                <li>Class attributes allow us to share a CSS rule to any element we choose by assigning the rule to a class attribute with a class selector.</li><br>
+                                <li>The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas.<br></li><br>
+                            </ul>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h3><a href="https://www.w3schools.com/Css/css_attributes.asp"> More Attributes</a></h3>
+                            <br>
+                            <p>CSS attributes provide access to html elements for controlling how they look.</p>
+                            <br>
+                            <ul>
+                                <li>All HTML elements have attributes</li><br>
+                                <li>Attributes usually come in name:value pairs such as name="value".</li><br>
+                                <li>This is how we can access and refine control over every single element on the page.</li>
+                                <br>
+                                <li>For example, the <code>&lt;img&gt;</code> element can contain various attributes;
+                                <br>
+                                <br>
+                                <li>The `src` attribute defines the location, or source, of the image file.</li> 
+                                <br>
+                                <li>The `alt` attribute contains a text string that describes the appearance and functionality of the image.
+                                <br> 
+                                <br>Word to the wise, this particular attribute cannot be viewed and is used to explain what <em>should be there</em>, if the image were 
+                                     to go missing, or be put in the wrong folder accidentally.
+                                <br>
+                                <br>If this happens, you'll see the images alt description text with a small 'missing image' icon.  
+                                <br>A better method for explaining the image (or anything really) as a user hovers over it, would be...
+                                </li> 
+                                <br>
+                                <li>The 'title' attribute can be used to provide a description as a user hovers over the image.</li>
+                                <br>
+                                <li>Another good example of an attribute is for the <code>&lt;a&gt;</code> tag; The 'href' attribute 
+                                    is vital for directing the anchor link to the correct destination.  Click on the element titles or the footer icons to see what I mean.</li>
+                            </ul>
+                            <br>
+                            <p>There is a ton of elements and attributes to know and read up on, you never know when they may be needed.
+                            </p>
+                            <br>
+                            <img src="./assets/img/png/snippets/form_input_example.png" alt="for input styling example">
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="css-close"><h4></h4></div>
+                </section>  
+                <!-- why is this br required? -->
+                <br>
+                <!-- GitHub guide -->
+                <section id="github">
+                    <h1>GitHub</h1>
+                    <h2 class="topic-title"> Topics</h2>
+                    <hr><br>
+                    <div class="container">
+                        <div class="cols">
+                            <!-- all the github topics  -->
+                            <h3><a href="https://en.wikipedia.org/wiki/github">GitHub</a></h3>
+                            <br>
+                            <p>We use Github for version control.  It's an extremely useful way to create repositories for each project
+                                 that you can then pull and push changes to.<br>
+                                We can create new branches as to not overwrite your original commits and to collaborate with work colleagues on set project issues.
+                            
+                            </p>
+                            <!-- example syntax -->
+                            <img src="./assets/img/png/snippets/git_example.png" alt="github snippet">
+                            <h3><a href="https://www.w3schools.com/tags/tag_head.asp">Create Issues</a></h3>
+                            <br>
+                            <p>
+                                Issue explanation: <br>
+                                Purpose: task management tool <br>
+                            </p>
+                            <br>
+                            <ul>
+                                <li>Track, organize, and communicate ideas, tasks, bugs, and enhancements.</li><br>
+                                <li>Identify bottlenecks or blockers that could prevent work progress.</li><br>
+                                <li>Avoid duplicating work by assigning tasks or issues.</li><br>
+                            </ul>
+                            <br>
+                            <h3><a href="https://www.w3schools.com/tags/tag_head.asp">User Story - adding new issues</a></h3>
+                            <br>
+                            <p>
+                                Here is an example of an issue; we create User Stories that help us identify exactly 
+                                what we trying to build and how far through we are.
+                            </p>
+                            <br>
+                            <p>
+                                <b> User Story:</b><br>
+
+                                As a boot camp student,
+                                I want a Prework Study Guide website,
+                                so that I can review all the information I learned throughout Prework.<br>
+                                <br>
+                                <b>Assessment Criteria:</b>
+                                <br>
+                                GIVEN a Prework Study Guide website <br>
+                                WHEN I visit the website in my browser <br>
+                                <br>
+                                THEN I see four boxes with styled shadows titled HTML, CSS, Git, and JavaScript with associated notes listed
+                                and styled in an attractive way.<br>
+                                <br>
+                                WHEN I view the study guide <br>
+                                THEN I see a dark blue header and footer, and four boxes with a shadow styling.<br>
+                                <br>
+                                WHEN I open the console in my browser <br>
+                                <br>
+                                THEN I can see the four topics I learned listed along with a suggestion on what I should study first <br>
+                                <br>
+                                WHEN I visit the website using the URL <br>
+                                <br>
+                                THEN I can access my website from any browser <br>
+                                <br>
+                            </p>
+                            <h3><a href="https://www.w3schools.com/tags/tag_head.asp">Add New Repo</a></h3>
+                            <br>
+                            <p>To create a new repo, just add a new one in GitHub. Give it a name and a description.
+                                Make sure you have set up your SSH key first!
+                            </p>
+                            <br>
+                            <p>Using Command Line (Terminal on a Mac); navigate (cd) or create (mkdir) folders to house your project.
+                                Use (touch "filename") to add new files like index.html, style.css and main.js. </p>
+                            <br>
+                            <p>
+                                After you open a file in VSCode, type 'code .' within that folder from the CLI and VSCode will open the project into a new workspace. <br>
+                            <br>
+                                It's a good idea to save a workspace within VSCode so you can easily access the correct one and differentiate it between work and personal workspaces.
+                            <br>
+                            <br>
+                            <img src="./assets/img/png/snippets/git_new_repo.png" alt="add new repo github screenshot"> 
+                            </p>
+                            <br>
+                            <h3><a href="https://www.w3schools.com/tags/tag_head.asp">Branching</a></h3>
+                            <br>
+                            <p>
+                                A branch is a copy or version of the code that can be worked on independently in isolation so development changes do not disrupt other 
+                                team members who are also working on the code and testing their solutions. <br>
+                                <br>
+                                When we are typically working on code, it is in an unstable state since we are actively developing the code. <br><br>
+                                default branch:
+                                <br>
+                                main - main branch - holds the final product <br>
+                                <br>
+                                feature branching:
+                                <br>
+                                hold code for a single feature being developed on 'working branches' later merged back to the main branch. <br><br>
+                            </p>
+                            <p>
+                                We can attack a new issue in terminal and push new content thusly: <br>
+                                <br>
+                                Move into the correct folder (cd assets) <br>
+                                Create a new file (touch style.css)
+                                <br>
+                                <br>
+                                Check which Git branch you are on by running:
+                                <br>
+                                git status
+                                <br>
+                                <br>
+                                If you are not on the main branch, switch to it and then create a new feature branch where you will develop the new content. <br>
+                                <br>
+                                These are the Git commands to check we're in main and add a new branch:
+                                <br>
+                                git checkout main
+                                <br>
+                                git checkout -b feature/add-css <br><br>
+                            </p>
+                            <p>
+                                Here is some useful reading on GitHub work flow: <br><br>
+                                <a href="https://docs.github.com/en/get-started/quickstart/github-flow"><em>GitHub Workflow (click this link!)</em></a>
+                            </p>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            
+                            <h3><a href="https://www.w3schools.com/tags/tag_head.asp">Staging</a></h3>
+                            <br>
+                            <p>
+                                To stage a file is simply to prepare it for a commit. Git, with its index allows you to commit 
+                                only certain parts of the changes you’ve done since the last commit. <br><br>
+                                STAGING file changes : <br>
+
+                                git add -A <br>
+                            </p>
+                            <br>
+                            <h3><a href="https://www.w3schools.com/tags/tag_head.asp">Git Commit</a></h3>
+                            <br>
+                            <p>
+                                COMMIT: <br>
+
+                                git commit -m "added header, and header container div" <br><br>
+                            </p>
+                            <br>
+                            <h3><a href="https://www.w3schools.com/tags/tag_head.asp">Pull Requests</a></h3>
+                            <br>
+                            <img src="./assets/img/png/snippets/git_pull_request.png" alt="git pull request image">
+                            <p>
+                                Pull the main code from origin main (pull source code) <br>
+                                <br>
+                                <p>git pull origin main</p>
+                                <br>
+                                - ensures we have latest commits and changes <br>     
+                                always pull source before PUSHING - ensures no conflicts between github and local repo! <br>     
+                            </p>
+                            <br>
+                            <h3><a href="https://www.w3schools.com/tags/tag_head.asp">Push Changes</a></h3>
+                            <br>
+                            <ul>
+                                <li>git push - transfer all changes to github </li><br>
+                                <li>go to github site: view repo -> should see the new file!</li><br>
+                                <li>make it live: go to settings -> Pages (under environment) <br>
+                                    -> Select None and choose MAIN -> save <br>
+                                    (makes the website LIVE) -> refresh browser (takes a while to create/go live)</li><br>
+                            </ul>
+                            <br>
+                            <p>
+                                GitHub takes time to fully get used to and understand.  <br>
+                                As a noob I made several errors but a quick Google search helped me overcome the issues. <br>
+                            </p>
+                            <br>
+                            <img src="./assets/img/png/snippets/git_error.png" alt="git error image">
+                        </div>
+                    </div>
+                    <br>
+                    <div id="git-close"><img src="./assets/img/icn/icn_terminal_wht.svg" alt="terminal_icon" id="terminal_icn"></div>
+                </section>
+                <!-- Js guide -->
+                <section id="javascript">
+                    <h1>JavaScript</h1>
+                    <h2 class="topic-title"> Topics</h2>
+                    <hr><br>
+                    <div class="container">
+                        <!-- all the js topics  -->
+                        <div class="cols">
+                            <h3><a href="https://en.wikipedia.org/wiki/javascript">JavaScript</a></h3>
+                            <br>
+                            <p><code>Javascript</code> is the most common front-end programming language.<br>
+                                It is one of the most widely used and best languages to achieve anything and everything
+                                that looks cool and adds functionality on a modern website.<br><br>
+                                You could view it as a multifaceted top-level language that you can do pretty
+                                much anything with, from animation, to developing entire web app front-ends.<br><br>
+                            </p>
+                            <h3><a href="https://www.w3schools.com/Css/css_syntax.asp">Syntax</a></h3>
+                            <br>
+                            <p><code>Syntax</code> is how we define every element of code structure with the language.
+                                Currently, I know very little about it, but I am able to read it and understand the basic gist
+                                 - thanks to my experience with Python.
+                                <br>
+                            </p>
+                            <!-- example syntax -->
+                            <img src="./assets/img/png/snippets/js_example.png" alt="javascript code snippet">
+                            <br>
+                            <br>
+                            <p>
+                                JavaScript looks a lot like other programming languages.  Once you get to grips with the basics of any modern language, 
+                                you can read code written in other languages and understand what's going on! <br>
+                                <br>
+                            </p>
+                            <br>
+                            <img src="./assets/img/png/snippets/opinion_conditonal.png" alt="coding is fun example">
+                            <br>
+                            <h3><a href="https://en.wikipedia.org/wiki/javascript">Personal Ramble(!)</a></h3>
+                            <br>
+                            <p>
+                                To be honest, JavaScript looks a little alien to me, and I have definitely struggled writing my own so far.<br>
+                                <br>
+                                Just reminding myself of my Growth Mindset: <em>I can't yet, but I will!</em><br><br>
+                                Actually writing in the new language requires lots of practice and repetition to start coding fluently on your own.<br>
+                                <br>
+                                They say that for everything you learn through a tutorial, you should stop and spend 4 times as long writing the code
+                                 out and re-writing it out, until it 'sticks'. <br><br> This has definitely worked for me, especially in small chunks of time!<br><br>
+                                 Once I get my head around GitHub, I intend to add my Pomodoro Learning Timer to a repo - so look out for it!  It really helps to break up learning and to take constant breaks. <br> 
+                            </p>
+                            <br>
+                            <p>For a pretty decent introductory tutorial, check this link out: <br>
+                               <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">
+                                <b>link to Basic JavaScript tutorial</b>
+                               </a>
+                            </p>
+                            <br>
+                            <p>
+                                Add a .js file to your html: <br>(at the bottom, just before the body close tag!)<br><br>
+                                <code>&lt;script src="scripts/main.js"&gt;&lt;/script&gt;</code> 
+                            </p>
+                            <br>
+                            <h3><a href="https://en.wikipedia.org/wiki/javascript">Comments</a></h3>
+                            <br>
+                            <p>
+                                single line: // this is a comment <br><br>
+
+                                multi line: /* This is a multi-line comment <br>
+                                that caters for larger comments spanning multiple lines */ <br>
+                                <br><br>
+                                A nifty shortcut to comment out chunks of code in VSCode: <br><br>
+                                highlight the code block; <br>
+                                hit 'Command + /' <br><br>
+
+                            </p>
+                            <h3><a href="https://en.wikipedia.org/wiki/javascript">Variables</a></h3>
+                            <br>
+                            <p>When I first discovered variables back in school, I really loved the concept of them.
+                                The idea that it's a box containing a value that can be used, reused and changed has never really left my mind. <br>
+                                For the first time in my life, I was suddenly interested in actual <em>maths!</em>
+                                <br>
+                            </p>
+                            <br>
+                            <p>There are 2 types of variables; implicit and explicit:</p> <br>
+                            <p>
+                                <b>Implicit:</b>  <br><br>
+
+                                myVar = "hello";  -> (or var myVar = "hello") <br><br>
+
+                                <p>Implicit declaration of a variable leaves it up to the computer to instinctively know what it is.
+
+                                </p> 
+                                <br>
+
+                                <b>Explicit:</b> <br><br>
+
+                                let myVar = "hello" (changable) <br>
+
+                                const myVar = "hello" (constant) <br>
+
+                                <p>
+                                    An explicit declaration is when you specifically give the variable a type. <br>
+                                    Either a let (for muteable) or const (for immuttable). <br>
+                                    <br>
+                                    Mutable means it can be changed throughout it's existance.
+                                    <br>
+                                    Immutable means it's a <em>constant</em> value that cannot be changed.
+                                </p>
+                                <br>
+
+                                Calling a Variable: <br>
+
+                                myVar; <br>
+                                <br>
+                                We say 'declaring' a variable when creating and defining one. <br> We say 'calling' when we want to use it. 
+                                <br>
+                                (noob doubt- That last one may be more related to 'function calls' though but I've always said calling!)<br>
+                            </p>
+                            <br>
+                            <h3><a href="https://en.wikipedia.org/wiki/javascript">Data Types</a></h3>
+                            <br>
+                            <p>There are several types of data to consider when working with variables.  These are:<br>
+                            <br> 
+                            'Strings' - text 
+                            <br>
+                            'Numbers' - numbers! 
+                            <br>
+                            'Booleans' - True or False 
+                            <br>
+                            'Arrays' - list of mixed data types
+                            <br>
+                            'Objects' - anything can be an object and I presume it relates to OOP (Object Orientated Programming)
+                             - I dunno yet, don't judge me!. <br>
+                            </p>
+                            <br>
+                            <p>
+                                Here are each data type, in an example variable: <br><br>
+                            </p>
+                            <ul>
+                                <li>string = "hello";</li>
+
+                                <li> number = 0;</li>  
+                                    
+                                <li>boolean = true</li>   
+                                    
+                                <li> array = [1,"bob",2,10]</li> 
+                                    
+                                <li>object = let myVar = document.querySelector('h1');</li>      
+                            </ul>
+                            <br>
+                            <h3><a href="https://en.wikipedia.org/wiki/javascript">Operators</a></h3>
+                            <img src="./assets/img/png/snippets/operators.png" alt="javascript operators example">
+                            <br>
+                            <h3><a href="https://en.wikipedia.org/wiki/javascript">Functions</a></h3>
+                            <br>
+                            <p>
+                                There are 2 main types of function; built-ins and your own. <br>
+                                <br>
+                                The functions 'alert' and 'querySelector' are built in to the browser. <br>
+                                <br>
+                                Built in function examples: <br><br>
+
+                                let myVar = document.querySelector('h1'); <br>
+                                <br>
+                                alert("hello!"); <br>
+                                <br>
+                                Add arguments: <br><br>
+                                () - add arguments to the functions (inputs) <br>
+
+                                So, alert('expects an arg here') <br>
+                                <br>
+                                This tells the function what we want it to display i.e - "hello" <br>
+                            </p>
+
+                            <img src="./assets/img/png/snippets/made_not_funny.png" alt="!not a funny joke conditional">
+                            <br>
+                            <p>
+                                Other (more useful functions) might include creating a function that does something, like a calculation: <br>
+                                <br>
+                            </p>
+                            <p>
+                                maths functions: <br><br>
+                                /* here, we assign a function called multiply, and provide 2 input arguments (num1, num2).
+                                <br>
+                                These (input argument paramenters) allow the user to type in whatever numbers they wish to perform the operation. */ <br>
+                                <br>
+                                // we created a variable called result, and declared what the expected operation will do. 
+                                    i.e- multiply num1 by num2 <br>
+                                <br>
+                                function multiply(num1, num2) { <br>
+                                    &ensp;let result = num1 * num2; <br>
+                                    &ensp;return result <br>
+                                }
+                                <br>
+                                <br>
+                                The return is important here. The return allows for variable 'scoping' <br>
+                                i.e- variables are usually only available for that INSIDE its function; <br>
+                                    but if you return the result - the function is now available (reusable/accessible) anywhere in our code! 
+                            </p>
+                            <br>
+                            <p>
+                                If you open console (F12 via VSCode) you can test whether the function is working properly: <br>
+                                <br>
+                                call the function: <br>
+                                <br>
+                                multiply(4,7); <br>
+                                multiply(20,20); <br>
+                                <br>
+                            </p>
+                            <br>
+                            <h3><a href="https://en.wikipedia.org/wiki/javascript">Conditionals</a></h3>
+                            <br>
+                            <p>
+                                Conditionals are one of my favorite things about coding; they are incredibly useful 
+                                and used a lot to solve a problem your working on. I love tranforming pseudo-code into them.<br>
+                            </p>
+                            <br>
+                            <h3><a href="https://en.wikipedia.org/wiki/javascript">If, else</a></h3>
+                            <br>
+                            <p>
+                                Test if an expression returns true or not:</p><br>
+                                <img src="./assets/img/png/snippets/if_else.png" alt="conditonal example snippet">
+                            <p>
+                            <br>
+                            <h3><a href="https://en.wikipedia.org/wiki/javascript">If, else if and else</a></h3>
+                                <br>
+                                //if, elif (else if) and else: <br>
+                                <br>
+                                if (0) { <br>
+                                    &ensp;console.log("I'm 0!") <br>
+                                    &ensp;} else if (null) { <br>
+                                        &ensp;console.log("I'm null!") <br>
+                                } else if (true) { <br>
+                                    &ensp;console.log("I'm true!") <br>
+                                }
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="js-close"><h4></h4></div>
+                <!-- end sections -->
+                </section>
+            <!-- end boxes -->
+            </div>
+            <!-- bio-quote -->
+            <!-- <div class="quote">
+                <h1><em>"Live as if you were to die tomorrow.<br>
+                    Learn as if you were to live forever."</em></h1>
+            </div> -->
+            <!-- bio and skills section -->
+            <div class="btm-container">
+                <!-- bio card -->
+                <div class="bio-container">
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="./assets/img/png/glitchy81_horror.png" width="100%" 
+                                alt="Profile image of some dude not wearing a bow tie."/>
+                        <div class="card-text">
+                            <br>
+                            <img src="./assets/img/icn/icn_skull_wht.svg" id="card-icn" alt="code_icn">
+                            <br>
+                            <h2><b><a href="https://github.com/Matt-Jones-Developer">Glitchy81</a></b></h2>
+                            <hr>
+                            <br>
+                            <h3><em>"A coding obsessed, retro gaming nostalgia nerd, 
+                                with a dash of 80's Thrash Metal guitarist and horror movie buff thrown in
+                                for good measure."<br> 
+                                <small>- glitchy</small></em> &#128123;</h3>
+                            <br>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- bootcamp skills & goals -->
+                <div class="outer-container">
+                    <!-- bio-quote -->
+                    <div class="quote">
+                        <h1><em>"Live as if you were to die tomorrow.<br>
+                            Learn as if you were to live forever."</em></h1>
+                    </div>
+                    <div class="skills-container">
+                        <img src="./assets/img/icn/icn_code_blocks_wht.svg" alt="code_icn">
+                        <br>
+                        <h2>Current Skills</h2><hr><br>
+                        <ul id="ul-skills">
+                            <li><span>Python programming language</span></li>
+                            <li><span>Command Line (Unix) & Virtual Environments</span></li>
+                            <li><span>Some HTML, CSS & SCSS</span></li>
+                            <li><span>Sprite 2D animation</span></li>
+                            <li><span>2D game design</span></li>
+                            <li><span>Asset Creation</span></li>
+                            <li><span>Inkscape Vector Imaging</span></li>
+                            <li><span>Ableton Live & Logic Pro</span></li>
+                        </ul>
+                        <img src="./assets/img/icn/icn_build.svg" alt="code_icn">
+                        <br>
+                        <h2>Course Goals</h2><hr><br>
+                        <p>Excited about learning as much as possible and improving upon my skills
+                                in web development. Particularly interested in grasping Javascript
+                                to create unique animations and use other frameworks to build up my project portfolio.
+                        </p>
+                        <br>
+                        <p>I would be <em><b>extremely</b></em> grateful if I could have assistance landing 
+                            or building the perfect career off the back of this course - I am too old and too poor to fail.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- footer -->
+        <footer class="footer">
+            <p>Designed & <code style="color: #A0FCD6;">coded</code> with <strong>love</strong> 
+                by <a href="https://github.com/Matt-Jones-Developer">Matt Jones</a>. &copy; 2022. All rights reserved.</p>
+            <br>
+            <!-- footer social icons -->
+            <div class="footer-icons">
+                <ul class="ul-icons">
+                    <li><a href="#" target="__blank"><img src="./assets/img/icn/icn_mail_wht.svg" width="24px" height="24px"></img></a></li>
+                    <li><a href="https://github.com/Matt-Jones-Developer" target="__blank" class="git-icn"><img src="./assets/img/icn/github_icn_wht.svg" width="24px" height="24px"></a></li>
+                    <li><a href="https://glitchygames.slack.com" target="__blank"><img src="./assets/img/svg/slack_color.svg" width="24px" height="24px"></img></a></li>
+                    <li><a href="https://twitter.com/glitchy81_dev" target="__blank"><img src="./assets/img/icn/icn_twitter_wht.svg" width="24px" height="24px"></img></a></li>
+                    <li><a href="#" target="__blank"><img src="./assets/img/icn/icn_linkedin.svg" width="24px" height="24px"></img></a></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- better to script files at the end to ensure no conflicts with the html -->
+        <script src="./scripts/main.js"></script>
+    </body>
+</html>
