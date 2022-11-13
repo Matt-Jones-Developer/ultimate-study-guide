@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,800,900'">
-        <link href="./assets/css/style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
         <title>Study Guide</title>
     </head>
     <body>
@@ -28,7 +28,7 @@
                     <h2 id="user">Welcome, User!</h2>
                     <button>Change User</button>
                 </div>
-                <div class="header-searchbar">searchbar goes here</div>
+                <div class="header-searchbar">[searchbar]</div>
             </div>
         </header>
         <main>
@@ -38,7 +38,7 @@
                 <h2>afterburners on, let's do this.</h2>
             </div>
             <!-- logos -->
-            <div class="boxes">
+            <div class="logo-boxes">
                 <div class="flex-container">
                     <!-- if buttons - add <a href's> -->
                     <div class="box">
@@ -78,30 +78,33 @@
                         <!-- i.e - cols 1-3: html / head + body(short) / elements - cols (next row) 1-3 attributes / -->
                         <div class="cols">
                             <!-- all the html topics  -->
-                            <h3><a href="https://en.wikipedia.org/wiki/HTML">html</a></h3>
+                            <h3><a href="https://en.wikipedia.org/wiki/HTML">HTML</a></h3>
                             <br>
-                            <p><code>&lt;HTML&gt;</code> stands for HyperText Markup Language.
+                            <p><code>&lt;html&gt;</code> stands for HyperText Markup Language.
                             <br>
                                 HTML is one of the three cornerstone languages used in web development: HTML, CSS, and JS.
                             <br>
                             <br>
                              <!-- example syntax -->
                              <h3><a href="https://www.w3schools.com/html/html_basic.asp">Syntax</a></h3>
+                             <br>
                              <img src="./assets/img/png/snippets/html_example.png" alt="html code snippet">
                             <br>
+                            <br>
+                            <p>
                                 HTML is used to create the structure of a webpage and is made up of 'elements' which work together
                                  to provide content and the basic framework for all pages on the web. 
-                            <br>
+                            </p>
                             <br>
                             <ul>
                                 <li>All HTML documents must start with a document type declaration: <code>&lt;!DOCTYPE html&gt;</code>.</li><br>
                                 <li>The HTML document itself begins with <code>&lt;html&gt;</code> and ends with <code>&lt;/html&gt;</code>.</li><br>
                                 <li>The visible part of the HTML document is between <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code>.</li><br>
                             </ul>
-                                 HTML attributes provide additional information about HTML elements. (more them later!)
-                            <br>
-                            <br>
+                            <p>
+                                HTML attributes provide additional information about the HTML elements and allow us to properly format and prettify the content. (more them later!)
                             </p>
+                            <br>          
                             <p>An element is a type of content on a webpage. The following element types are commonly used 
                                 to add content to pages:
                             </p>
@@ -112,14 +115,9 @@
                                 <li>Header elements</li><br>
                                 <li>List elements</li><br>
                             </ul>
-                            <br>
                             <p>In addition to elements that can be seen on the page, elements are also used to 
                                 describe the content to browsers and other developers. These go in the head.
                             </p>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
                             <br>
                             <h3><a href="https://www.w3schools.com/tags/tag_head.asp">Head</a></h3>
                             <br>
@@ -141,13 +139,17 @@
                             </ul>
                             <h3><a href="https://www.w3schools.com/tags/tag_body.asp">Body</a></h3>
                             <br>
-                            <p>The <code>&lt;body&gt;</code> element represents the visible content shown to the user.
+                            <p>
+                                The <code>&lt;body&gt;</code> element represents the visible content shown to the user.
+                            </p>
                             <br>
                             <br>
+                            <p>
                                 The body tag is a semantic, parent element, whereas a non-semantic, child element is, 
                                 for example, a <code>&lt;div&gt;</code>.
+                            </p>
                             <br>
-                            <br>
+                            <p>
                                 Everything from the <code>&lt;header&gt;</code> to the <code>&lt;footer&gt;</code> live here.
                             </p>
                             <br>
@@ -159,7 +161,9 @@
                                 <li>The <code>&lt;header&gt;</code> element is the area that the top part of your webpage lives.
                                 The header is where you'd put your logo, navigation bar, and perhaps some user login or search bar features.
                                 <br>
+                                <br>
                                 <img src="./assets/img/png/snippets/headings.png" alt="heading tag example">
+                                <br>
                                 <br>
                                 </li>
                                 <li>The <code>&lt;div&gt;</code> element represents a non-semantic section or division and are very versatile.</li>
@@ -201,11 +205,6 @@
                                 <br>
                                 <li>The `alt` attribute contains a text string that describes the appearance and functionality of the image.
                                 <br> 
-                                <br>Word to the wise, this particular attribute cannot be viewed and is used to explain what <em>should be there</em>, if the image were 
-                                     to go missing, or be put in the wrong folder accidentally.
-                                <br>
-                                <br>If this happens, you'll see the images alt description text with a small 'missing image' icon.  
-                                <br>A better method for explaining the image (or anything really) as a user hovers over it, would be...
                                 </li> 
                                 <br>
                                 <li>The 'title' attribute can be used to provide a description as a user hovers over the image.</li>
@@ -213,11 +212,10 @@
                                 <li>Another good example of an attribute is for the <code>&lt;a&gt;</code> tag; The 'href' attribute 
                                     is vital for directing the anchor link to the correct destination.  Click on the element titles or the footer icons to see what I mean.</li>
                             </ul>
-                            <br>
                             <p>There is a ton of elements and attributes to know and read up on, you never know when they may be needed.
                             <br>
                             <br>
-                                A great resource for me has been w3schools! For example, whilst coding this page I looked up <code>&lt;code&gt;</code> !
+                                A great resource for me has been w3schools! For example, whilst coding this page I looked up <code>&lt;code&gt;</code>
                             </p>
                             <img src="./assets/img/png/snippets/code_tags.png" alt="code tag example">
                             <br>
@@ -243,8 +241,10 @@
                             <br>
                             <p>CSS stands for Cascading StyleSheets, another programming language used by developers
                                 to define how webpage content is presented to users. It is probably my favourite language, after Python!
+                            </p>
                             <br>
                             <br>
+                            <p>
                                 Whereas HTML strictly handles the structure and content of a webpage, CSS defines the colors, aesthetics,
                                 visual layout, and organization of your webpage.
                             </p>
@@ -463,11 +463,6 @@
                             </p>
                             <br>
                             <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            
                             <h3><a href="https://www.w3schools.com/tags/tag_head.asp">Staging</a></h3>
                             <br>
                             <p>
@@ -841,6 +836,6 @@
             </div>
         </footer>
         <!-- better to script files at the end to ensure no conflicts with the html -->
-        <script src="./assets/scripts/main.js"></script>
+        <script src="./scripts/main.js"></script>
     </body>
 </html>
