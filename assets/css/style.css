@@ -38,12 +38,7 @@ body {
 }
 
 .header-title {
-    /* hacky and wont work with responsive 
-    "I cant yet, but I will!" */
     padding-left: 5rem;
-    /*  why wont margin 0 auto centre this? 
-    because we dont want to move the rocket over! */
-    /* margin: auto; */
 }
 
 #rocket_icn {
@@ -117,10 +112,6 @@ ul {
     padding-left: 1.4rem;
 }
 
-/* li {
-    text-decoration: none;
-} */
-
 #ul-skills {
     padding: .3rem 1.5rem;
     font-size: 16px;
@@ -137,11 +128,11 @@ img {
     object-fit: scale-down;
 }
 
-/* main {
+main {
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 5px;
-}  */
+} 
 
 /* .parallax-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -601,9 +592,6 @@ section h2:before {
         margin: 0;
     }
 
-    /*  how to set the width on these? */
- 
-
     .cols img {
         object-fit: fill;
     }
@@ -611,12 +599,6 @@ section h2:before {
     code {
         font-size: 14px;
     }
-
-    /* `WHY are CSS cols formatting differently??! 
-    they are all tied to the same cols class */
-    /* #css {
-
-    } */
 
     .btm-container,
     .bio-container {
@@ -644,20 +626,6 @@ section h2:before {
 }
 
 @media (max-width: 320px) {
-
-    /* .hero-top h1 {
-        padding-left: .5rem;
-        font-size: 48px;
-    }
-
-    .hero-top h2 {
-        padding-right: 0;
-        font-size: 18px;
-    }
-
-    .hero-bottom h2 {
-        font-size: 16px;
-    } */
 
     .logo-boxes img {
         /* fixes SE only */
