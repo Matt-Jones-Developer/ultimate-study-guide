@@ -470,7 +470,7 @@ section {
     padding: 1rem;
     padding-top: 2rem;
     padding-bottom: 4rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 section h1 {
