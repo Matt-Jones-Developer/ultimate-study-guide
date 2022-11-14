@@ -225,6 +225,10 @@ main {
     /* border: 1px solid red; */
 }
 
+.boxes {
+    margin: 0;
+}
+
 hr {
     border: 1px solid white;
 }
@@ -466,6 +470,7 @@ section {
     padding: 1rem;
     padding-top: 2rem;
     padding-bottom: 4rem;
+    border: 1px solid red;
 }
 
 section h1 {
@@ -551,7 +556,7 @@ section h2:before {
     height: 200px;
     padding: 2rem;
     padding-bottom: 4rem;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .footer p {
@@ -769,7 +774,7 @@ section h2:before {
     /* for topics! */
     .boxes {
         display: block;
-        padding: 2rem;
+        padding: 0;
     }
 
     /* .flex-container {
@@ -809,6 +814,28 @@ section h2:before {
     .quote h1 {
         font-size: 24px;
     }
+
+    .footer {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .ul-icons {
+        display: inline-flex;
+        position: relative;
+        text-decoration: none;
+        padding: 1rem;
+    }
+    
+    .ul-icons > li {
+        /* display: inline-block; */
+        padding: 1rem 1rem;
+    }
+
+    .ul-icons > li:first-child {
+        /* display: inline-block; */
+        padding: 1rem 2rem;
+    }
 }
 
 
@@ -822,6 +849,11 @@ section h2:before {
         margin: 0 auto;
         padding: .5rem;
         padding-bottom: 0;
+    }
+
+    .footer {
+        padding-left: .5rem;
+        padding-right: .5rem;
     }
 }
 
