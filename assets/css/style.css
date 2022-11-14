@@ -39,7 +39,7 @@ body {
 }
 
 .header-title {
-    margin-left: 1rem;
+    margin-left: 2rem;
     padding: 0;
     /* border: 1px solid greenyellow; */
 }
@@ -135,7 +135,7 @@ ul {
 /* be specific? 
 includes icons, logos etc */
 img {
-    max-width: 100%;
+    width: 100%;
     object-fit: scale-down;
 }
 
@@ -540,11 +540,11 @@ section h2:before {
     }
 
     .header-title {
-        padding-left: 3rem;
+        padding-left: 2rem;
     }
 
     .header-title h1 {
-        font-size: 48px;
+        font-size: 40px;
     }
 
     .header-title h3 {
@@ -583,7 +583,7 @@ section h2:before {
     .box {
         box-shadow: 7px 7px 0 
         rgba(64, 63, 63, 0.8);
-        margin: 7px;
+        margin: 1rem;
     }
 
     .flex-container {
@@ -653,7 +653,7 @@ section h2:before {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 380px) {
 
     .header-top {
         margin: 0;
@@ -666,10 +666,11 @@ section h2:before {
     .header-title {
         padding: 0;
         margin-right: 0;
+        padding-left: 0;
     }
 
     .header-title h1 {
-        font-size: 38px;
+        font-size: 42px;
     }
 
     .logo-boxes img {
