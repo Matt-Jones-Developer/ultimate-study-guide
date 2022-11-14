@@ -1,5 +1,20 @@
 /*  study guide css */
 
+/* animation keyframes */
+@keyframes flow {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 100%;
+    }
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +40,7 @@ body {
     margin: 0 auto;
     /* stop text overflow */
     /* min-height: 20rem; */
-    padding: 1rem;
+    padding: 0;
     padding-top: 3rem;
     padding-bottom: 4rem;
 }
@@ -35,13 +50,19 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 0 auto;
     /* border: 1px solid red; */
 }
 
 .header-title {
-    margin-left: 2rem;
-    padding: 0;
+    margin-left: 0;
+    /* margin-left: 2rem; */
+    padding-left: 5rem;
     /* border: 1px solid greenyellow; */
+}
+
+.header-title h1, h2, h3 {
+    padding: 0;
 }
 
 .header-title h1 {
@@ -53,7 +74,7 @@ body {
     may be why we cant treat the margin as a unified object? */
     width: 5rem;
     /* icn space */
-    float: right;
+    /* float: right; */
     padding-top: 4rem;
     /* border: 1px solid red; */
 
@@ -63,7 +84,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 4rem;
     padding-top: 5rem;
     padding-bottom: 3rem;
     height: 5rem;
@@ -175,6 +196,19 @@ main {
 .hero-top h1 {
     font-size: 100px;
     padding-left: 4rem;
+    background: -webkit-linear-gradient(
+        -45deg,  
+        #5FCFBE,
+        #fff,
+        #DA6D62
+        );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-rendering: optimizeLegibility;
+    background-size: 200%;
+    /* animation: colors 5s infinite; */
+    animation: flow 10s ease-in-out infinite;
 }
 
 .hero-top h2 {
@@ -187,9 +221,8 @@ main {
     margin: 0 auto;
     text-align: center;
     letter-spacing: .3rem;
-    padding: 2rem 4rem;
-    /* padding-bottom: 2rem; */
-    padding-left: 5rem;
+    padding-top: 8rem;
+    /* border: 1px solid red; */
 }
 
 hr {
@@ -200,12 +233,21 @@ code {
     font-size: 16px;
 }
 
+.logo-boxes {
+    height: 20rem;
+    margin: 0 auto;
+    margin-top: 8rem;
+    /* border: 1px solid yellow; */
+
+}
+
 .flex-container {
-    height: 100%;
+    /* height: 100%; */
     max-width: 1000px;
     padding: 0 4rem;
-    margin: 8rem auto;
+    margin: 4rem auto;
     margin-bottom: 2rem;
+    /* border: 1px solid green; */
 }
 
 .logo-boxes .flex-container {
@@ -215,6 +257,7 @@ code {
     /* cross axis - centred */
     align-items: center;
     /* everything centered */
+    text-align: center;
 }
 
 .box {
@@ -226,8 +269,14 @@ code {
     /* cursor: pointer; */
     border-radius: 1rem;
     padding-top: 5px;
-    margin-right: 4rem;
+    margin: 0 auto;
+    margin-right: 6rem;
     width: 100%;
+    /* border: 1px solid red; */
+}
+
+.box:last-child {
+    margin-right: 0;
 }
 
 /* .box:active {
@@ -491,6 +540,7 @@ section h2:before {
     font-family: monospace;
     font-size: 42px;
 }
+
 .footer {
     background-color: #000024;
     display: block;
@@ -522,7 +572,7 @@ section h2:before {
     display: inline-flex;
     position: relative;
     text-decoration: none;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 .ul-icons > li {
@@ -536,16 +586,16 @@ section h2:before {
     .header-top {
         margin-left: 0;
         margin-right: 0;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .header-title {
-        padding-left: 2rem;
+        padding-left: 5rem;
     }
 
     .header-title h1 {
-        font-size: 40px;
+        font-size: 48px;
     }
 
     .header-title h3 {
@@ -561,20 +611,25 @@ section h2:before {
         padding-bottom: 0;
     }
 
-    .hero-bottom {
-        margin-top: 1rem;
-        margin-bottom: 0;
-        padding: 0;
-    }
-
     .hero-top h1 {
         padding: .5rem;
-        font-size: 56px;
+        font-size: 60px;
     }
 
     .hero-top h2 {
         padding-right: 0;
-        font-size: 18px;
+        font-size: 22px;
+    }
+
+    .hero-bottom {
+        margin-top: 1rem;
+        margin-bottom: 0;
+        padding: 1rem;
+    }
+
+    .flex-container {
+        /* display: block; */
+        padding: 0 1rem;
     }
 
     .logo-boxes img {
@@ -584,23 +639,22 @@ section h2:before {
     .box {
         box-shadow: 7px 7px 0 
         rgba(64, 63, 63, 0.8);
-        margin: 1rem;
+        margin: 2rem;
     }
 
-    .flex-container {
-        /* display: block; */
-        padding: 0 1rem;
+    .box:last-child {
+        margin-right: 2rem;
     }
 
     .hero-bottom h2 {
         padding-left: 1rem;
         padding-right: 1rem;
-        font-size: 16px;
+        font-size: 18px;
     } 
 
     .container {
         margin: 1rem 2rem;
-        padding: 1.2rem;
+        padding: 1rem;
     }
 
     .cols {
@@ -654,11 +708,16 @@ section h2:before {
     }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 375px) {
 
     .header-top {
         margin: 0 auto;
-        padding: 0px;
+        padding: 0;
+    }
+
+    .header-btm {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     #rocket-icn {
         margin-left: 0;
@@ -674,14 +733,40 @@ section h2:before {
         font-size: 42px;
     }
 
-    .logo-boxes img {
-        /* fixes SE only */
-        width: 50px;
-        height: 50px;
-        padding: 2px;
-        padding-left: .7rem;
+    .logo-boxes {
+        height: 12rem;
+        padding: 0;
+        
     }
 
+    .flex-container {
+        margin: 2rem 0;
+    }
+
+    .logo-boxes img {
+        /* fixes SE only */
+        width: 60px;
+        height: 60px;
+        padding: 8px;
+        /* padding-left: .7rem; */
+    }
+
+    /* for logo boxes */
+    .box {
+        margin: 0 auto;
+        margin-right: 2rem;
+    }
+
+    .box:last-child {
+        margin-right: 0;
+    }
+
+    .hero-bottom {
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+
+    /* for topics! */
     .boxes {
         display: block;
         padding: 2rem;
@@ -726,16 +811,17 @@ section h2:before {
     }
 }
 
-/* @media (max-width: 768px) {
-    .container .top-section-container
-    .bio-container .card-container {
-        flex-direction: column;
-        padding-top: 20px;
-        text-align: center;
+
+
+@media (max-width: 340px) {
+    .hero-top h2 {
+        font-size: 16px;
     }
 
-    .boxes .top-section-container {
-        display: block;
-        text-align: center;
+    .hero-bottom h2 {
+        margin: 0 auto;
+        padding: .5rem;
+        padding-bottom: 0;
     }
-} */
+}
+
