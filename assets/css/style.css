@@ -35,10 +35,17 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    /* border: 1px solid red; */
 }
 
 .header-title {
-    padding-left: 5rem;
+    margin-left: 1rem;
+    padding: 0;
+    /* border: 1px solid greenyellow; */
+}
+
+.header-title h1 {
+    font-size: 60px;
 }
 
 #rocket_icn {
@@ -48,6 +55,8 @@ body {
     /* icn space */
     float: right;
     padding-top: 4rem;
+    /* border: 1px solid red; */
+
 }
 
 .header-btm {
@@ -256,12 +265,13 @@ code {
     box-shadow: 0 5px 10px 0 rgba(30, 30, 30, 0.8);
     background-color: #41415B;
     border-radius: 1rem;
-    margin: 1rem 0;
+    margin: 1rem 2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
     padding: 4rem;
     /* width: 100%; */
     /* transition: 0.5s; */
+    /* border: 1px solid red; */
 }
 
 .container h3 {
@@ -529,8 +539,12 @@ section h2:before {
         padding-right: 5px;
     }
 
+    .header-title {
+        padding-left: 3rem;
+    }
+
     .header-title h1 {
-        font-size: 30px;
+        font-size: 48px;
     }
 
     .header-title h3 {
@@ -584,7 +598,7 @@ section h2:before {
     } 
 
     .container {
-        margin: 0;
+        margin: 1rem 2rem;
         padding: 1.2rem;
     }
 
@@ -641,6 +655,23 @@ section h2:before {
 
 @media (max-width: 320px) {
 
+    .header-top {
+        margin: 0;
+        padding: 0;
+    }
+    #rocket-icn {
+        margin-left: 0;
+    }
+
+    .header-title {
+        padding: 0;
+        margin-right: 0;
+    }
+
+    .header-title h1 {
+        font-size: 38px;
+    }
+
     .logo-boxes img {
         /* fixes SE only */
         width: 50px;
@@ -663,6 +694,10 @@ section h2:before {
     .box {
         margin: 8px;
     }  */
+
+    .container {
+        margin: 1rem 0;
+    }
 
     .section {
         margin: 0;
