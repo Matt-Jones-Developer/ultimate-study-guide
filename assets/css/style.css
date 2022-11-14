@@ -109,7 +109,8 @@ a:hover {
 
 ul {
     /* list-style: none; */
-    padding-left: 1.4rem;
+    /* padding-left: 1.4rem; */
+    padding: 2rem;
 }
 
 #ul-skills {
@@ -122,9 +123,10 @@ ul {
     list-style: disc;
 }
 
-/* be specific? */
+/* be specific? 
+includes icons, logos etc */
 img {
-    width: 100%;
+    max-width: 100%;
     object-fit: scale-down;
 }
 
@@ -190,13 +192,6 @@ code {
 }
 
 .flex-container {
-    display: flex;
-    /* set ui items sideways */
-    justify-content: space-between;
-    /* center cross axis */
-    align-items: center;
-    /* center vertical (A) */
-    position: relative;
     height: 100%;
     max-width: 1000px;
     padding: 0 4rem;
@@ -204,8 +199,17 @@ code {
     margin-bottom: 2rem;
 }
 
+.logo-boxes .flex-container {
+    display: flex;
+    /* set ul items sideways (main axis ??*/
+    justify-content: space-between;
+    /* cross axis - centred */
+    align-items: center;
+    /* everything centered */
+}
+
 .box {
-    width: 170px;
+    flex: 1;
     background-color: #81888B;
     box-shadow: 15px 15px 0 
     rgba(64, 63, 63, 0.8);
@@ -213,6 +217,8 @@ code {
     /* cursor: pointer; */
     border-radius: 1rem;
     padding-top: 5px;
+    margin-right: 4rem;
+    width: 100%;
 }
 
 /* .box:active {
@@ -227,6 +233,10 @@ code {
     align-items: center;
     background: transparent;
     /* border: 1px solid red; */
+}
+
+.logo-boxes img {
+    padding: 4.4rem;
 }
 
 /* #page {
@@ -261,7 +271,8 @@ code {
 .btm-container {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
+    padding: 2rem;
     /* border: 1px solid red; */
 }
 
@@ -270,7 +281,7 @@ code {
     justify-content: space-between;
     align-items: center; */
     margin: 2rem;
-    padding: 2rem;
+    padding: 1rem;
     background-color: transparent;
     width: 50%;
     /* border: 1px solid red; */
@@ -310,7 +321,7 @@ code {
 }
 
 .quote {
-    padding: 4rem;
+    padding: 1rem;
     text-align: center;
     height: auto;
     /* width: 50%; */
@@ -327,9 +338,8 @@ code {
     /* height: 48rem; */
     width: 50%;
     margin-top: 2rem;
-    margin: 4rem;
+    margin: 1.5rem;
     padding: 2rem;
-    float: right;
     /* border: 1px solid red; */
 }
 
@@ -368,7 +378,7 @@ code {
     column-rule: 1px groove #5FCFBE;
     /* position: relative; */
     margin: 1rem auto;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
 }
 
 /* vertical fix */
@@ -552,6 +562,10 @@ section h2:before {
         font-size: 18px;
     }
 
+    .logo-boxes img {
+        padding: 1rem;
+    }
+
     .box {
         box-shadow: 7px 7px 0 
         rgba(64, 63, 63, 0.8);
@@ -588,7 +602,7 @@ section h2:before {
 
     .cols ul {
         text-align: left;
-        padding: 3rem;
+        padding: 2rem;
         margin: 0;
     }
 
@@ -613,7 +627,7 @@ section h2:before {
 
     .quote h1 {
         padding-bottom: 2rem;
-        font-size: 40px;
+        font-size: 32px;
         width: 100%;
     }
 
@@ -631,7 +645,8 @@ section h2:before {
         /* fixes SE only */
         width: 50px;
         height: 50px;
-        padding-left: 9px;
+        padding: 2px;
+        padding-left: 1.2rem;
     }
 
     .boxes {
@@ -660,7 +675,17 @@ section h2:before {
     }
 
     .outer-container {
-        margin-bottom: 6rem;
+        margin-top: 0px;
+        margin-bottom: 4rem;
+    }
+
+    .quote {
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .quote h1 {
+        font-size: 24px;
     }
 }
 
