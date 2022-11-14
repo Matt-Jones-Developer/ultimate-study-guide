@@ -1,6 +1,6 @@
 /*  study guide css */
 
-/* animation keyframes */
+/* colour-flow */
 @keyframes flow {
     0% {
         background-position: 0 50%;
@@ -14,6 +14,10 @@
         background-position: 0 100%;
     }
   }
+
+  /* fadeIn */
+
+  /* slideDown */
 
 * {
     margin: 0;
@@ -70,13 +74,8 @@ body {
 }
 
 #rocket_icn {
-    /* this is inside an unlabelled div -
-    may be why we cant treat the margin as a unified object? */
     width: 5rem;
-    /* icn space */
-    /* float: right; */
     padding-top: 4rem;
-    /* border: 1px solid red; */
 
 }
 
@@ -153,8 +152,7 @@ ul {
     list-style: disc;
 }
 
-/* be specific? 
-includes icons, logos etc */
+/* icons, logos etc */
 img {
     width: 100%;
     object-fit: scale-down;
@@ -207,7 +205,6 @@ main {
     -webkit-text-fill-color: transparent;
     text-rendering: optimizeLegibility;
     background-size: 200%;
-    /* animation: colors 5s infinite; */
     animation: flow 10s ease-in-out infinite;
 }
 
@@ -264,6 +261,10 @@ code {
     text-align: center;
 }
 
+.logo-boxes img {
+    padding: 4.4rem;
+}
+
 .box {
     flex: 1;
     background-color: #81888B;
@@ -273,7 +274,7 @@ code {
     /* cursor: pointer; */
     border-radius: 1rem;
     padding-top: 5px;
-    margin: 0 auto;
+    margin: 0;
     margin-right: 6rem;
     width: 100%;
     /* border: 1px solid red; */
@@ -289,29 +290,12 @@ code {
     rgba(30, 30, 30, 0.6);
 } */
 
-.logo-boxes .flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: transparent;
-    /* border: 1px solid red; */
-}
-
-.logo-boxes img {
-    padding: 4.4rem;
-}
-
-/* #page {
-    display: flex;
-
-} */
-
 /* #sideBar {
     width: 100px;
     background: red;
   } */
 
-.container {
+.accordian-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -325,112 +309,32 @@ code {
     /* width: 100%; */
     /* transition: 0.5s; */
     /* border: 1px solid red; */
+    /* disable until accordian todo */
+    /* max-height: 0; */
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
 }
 
-.container h3 {
+.accordian-container h3 {
     font-size: 24px;
 }
 
-.btm-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-    /* border: 1px solid red; */
+section h1 {
+    font-family: monospace;
+    font-size: 42px;
 }
 
-.bio-container {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-    margin: 2rem;
-    padding: 1rem;
-    background-color: transparent;
-    width: 50%;
-    /* border: 1px solid red; */
-}
-
-.card-container {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-    /* margin: 2rem; */
-    box-shadow: 0 5px 10px 0 rgba(30, 30, 30, 0.8);
-    background-color: #41415B;
-    border-radius: 1rem;
-    margin: 2rem;
-    padding: 2rem;
-    transition: 0.3s;
-    /* border: 1px solid red; */
-}
-
-.card {
-    /* background-color: #81888B; */
-    background-color: transparent;
-    /* width: 100%; */
-    border-radius: 1rem;
-    padding: 2rem;
-}
-
-#card-icn {
-    float: right;
-    width: 50px;
-    margin: 0;
-}
-
-.card:hover {
-    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.3);
-    background-color: #81888B;
-}
-
-.quote {
-    padding: 1rem;
-    text-align: center;
-    margin-bottom: 2rem;
-    /* height: auto; */
-    /* width: 50%; */
-    /* vertical-align: middle; */
-    /* width: 600px; */
-    /* border: 1px solid red; */
-}
-
-.quote h1 {
-    font-size: 48px;
-}
-
-.outer-container {
-    /* height: 48rem; */
-    width: 50%;
-    margin-top: 0;
-    margin: 1.5rem;
-    padding: 2rem;
-    /* border: 1px solid red; */
-}
-
-.skills-container {
-    box-shadow: 0 5px 10px 0 rgba(30, 30, 30, 0.8);
-    background-color: #E7B261;
-    border-radius: 1rem;
-    margin: 2rem;
-    padding: 2rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    /* max-height: 495px; */
-    /* border: 1px solid red; */
-}
-
-.skills-container img {
-    float: right;
-    width: 50px;
-    margin: 0;
-}
-
-.skills-container h2 {
+section h2 {
+    font-size: 28px;
     font-weight: 600;
 }
 
-.skills-container p {
-    font-size: 1.6rem;
+section h2:before {
+    content: ' \0023';
+}
+
+.topic-title {
+    font-size: 30px;
 }
 
 
@@ -471,24 +375,6 @@ section {
     padding-top: 2rem;
     padding-bottom: 4rem;
     /* border: 1px solid red; */
-}
-
-section h1 {
-    font-family: monospace;
-    font-size: 42px;
-}
-
-section h2 {
-    font-size: 28px;
-    font-weight: 600;
-}
-
-section h2:before {
-    content: ' \0023';
-}
-
-.topic-title {
-    font-size: 30px;
 }
 
 #html {background-color: #5FCFBE;}
@@ -544,6 +430,141 @@ section h2:before {
     content: ' \003B';
     font-family: monospace;
     font-size: 42px;
+}
+
+button.accordion {
+    margin: 2.3rem;
+    width: 96%;
+    background-color: #333;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 15px 4rem;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+  }
+  
+  button.accordion:after {
+    font-family: FontAwesome;
+    content: '\f150';
+    font-family: "fontawesome";
+    font-size: 24px;
+    float: right;
+  }
+  
+  button.accordion.is-open:after {
+    content: '\f151';
+  }
+  
+  button.accordion:hover, button.accordion.is-open {
+    background-color: #ddd;
+  }
+  
+  .accordion-content {
+    background-color: white;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+  }
+
+
+.btm-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    /* border: 1px solid red; */
+}
+
+.bio-container {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    margin: 2rem;
+    padding: 1rem;
+    background-color: transparent;
+    width: 50%;
+    /* border: 1px solid red; */
+}
+
+.card-container {
+    /* margin: 2rem; */
+    box-shadow: 0 5px 10px 0 rgba(30, 30, 30, 0.8);
+    background-color: #41415B;
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 2rem;
+    transition: 0.3s;
+    /* border: 1px solid red; */
+}
+
+.card {
+    /* background-color: #81888B; */
+    background-color: transparent;
+    /* width: 100%; */
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+#card-icn {
+    float: right;
+    width: 50px;
+    margin: 0;
+}
+
+.card:hover {
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.3);
+    background-color: #81888B;
+}
+
+.quote {
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    /* border: 1px solid red; */
+}
+
+.quote h1 {
+    font-size: 48px;
+}
+
+.outer-container {
+    width: 50%;
+    margin-top: 0;
+    margin: 1.5rem;
+    padding: 2rem;
+    /* border: 1px solid red; */
+}
+
+.skills-container {
+    box-shadow: 0 5px 10px 0 rgba(30, 30, 30, 0.8);
+    background-color: #E7B261;
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    /* max-height: 495px; */
+    /* border: 1px solid red; */
+}
+
+.skills-container img {
+    float: right;
+    width: 50px;
+    margin: 0;
+}
+
+.skills-container h2 {
+    font-weight: 600;
+}
+
+.skills-container p {
+    font-size: 1.6rem;
 }
 
 .footer {
@@ -657,7 +678,7 @@ section h2:before {
         font-size: 18px;
     } 
 
-    .container {
+    .accordian-container {
         margin: 1rem 2rem;
         padding: 1rem;
     }
@@ -749,11 +770,9 @@ section h2:before {
     }
 
     .logo-boxes img {
-        /* fixes SE only */
         width: 60px;
         height: 60px;
         padding: 8px;
-        /* padding-left: .7rem; */
     }
 
     /* for logo boxes */
@@ -781,13 +800,9 @@ section h2:before {
         display: block;
         margin: 0 auto;
         padding: 2rem;
-    }
+    } */
 
-    .box {
-        margin: 8px;
-    }  */
-
-    .container {
+    .accordian-container {
         margin: 1rem 0;
     }
 

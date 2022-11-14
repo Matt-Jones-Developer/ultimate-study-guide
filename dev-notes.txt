@@ -1,16 +1,26 @@
-// a place for all the development ideas, todos and more! (I probably should use 'issues' in GitHub)
+// This webpage and it's contents coded by Matt Jones for private viewing use only.
+// No byting.  Learn to code your own stuff! Not available to reuse, copy or steal for personal or commercial use.
+// Copyright 2022.  All rights reserved!
 
-TODO:
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// a place for all the development ideas, todos and more! (I probably should use 'issues' in GitHub) //
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// A test of my coding skills (self-taught) over the last 2 months.  Not great, but making progress. Feedback welcome! 
+// Reach me on Slack, Github, Zoom, Email and Twitter
+
+// TODO:
 
 # Add the custom styled JS 'to do list' code 
 # DONE: Create a custom CSS stylesheet for the todo
-# Verify that it's allowed by the tutor!
+# started accordian for huge chunks of text - todo 
 
 # add animations - fade in title footer - slide in containers etc 
 # Add all the topics that we have discussed so far - rewrite the notes and provide more info on each topic
-# Add handy links to W3Schools to quickly work on anything I need to improve on, or practice
+# Add ALL handy links to W3Schools to quickly work on anything I need to improve on, or practice - as title anchors
+
+# Add parallaxing background 
+# todo section 
 
 # Develop a way to 'accordian' open/close each section's container - to stop the webpage getting too long.
-
-
-# Add anything else that is required to pass the assignment 
+## started (not complete)

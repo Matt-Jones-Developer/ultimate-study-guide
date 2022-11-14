@@ -30,7 +30,7 @@
                     <h2 id="user">Welcome, User!</h2>
                     <button>Change User</button>
                 </div>
-                <div class="header-searchbar">[searchbar]</div>
+                <div class="header-searchbar">[searchbar - todo]</div>
             </div>
         </header>
         <main>
@@ -69,14 +69,13 @@
             <div class="boxes">
                 <!-- topics -->
                 <!-- html guide -->
-                <section id="html">
+                <section id="html" class="container">
                     <!-- entities -->
                     <h1>&lt;html&gt;</h1>
                     <h2 class="topic-title"> Topics</h2><hr><br>
-                    <div class="container">
-                        <!-- must be a single div for rules to show -->
-                        <!-- perhaps we need 3 topics for col? (so all content separates evenly over 3 lines with correct headings at top) -->
-                        <!-- i.e - cols 1-3: html / head + body(short) / elements - cols (next row) 1-3 attributes / -->
+                    <!-- accordian fan to break up the content on mobile devices! -todo -->
+                    <!-- <button class="accordion">HTML Content</button> -->
+                    <div class="accordian-container">
                         <div class="cols">
                             <!-- all the html topics  -->
                             <h3><a href="https://en.wikipedia.org/wiki/HTML">HTML</a></h3>
@@ -89,7 +88,6 @@
                             <br>
                             <br>
                             </p>
-                             <!-- example syntax -->
                              <h3><a href="https://www.w3schools.com/html/html_basic.asp">Syntax</a></h3>
                              <br>
                              <img src="./assets/img/png/snippets/html_example.png" alt="html code snippet">
@@ -234,9 +232,6 @@
                     <h1>CSS</h1>
                     <h2 class="topic-title"> Topics</h2><hr><br>
                     <div class="container">
-                        <!-- must be a single div for rules to show -->
-                        <!-- perhaps we need 3 topics for col? (so all content separates evenly over 3 lines with correct headings at top) -->
-                        <!-- i.e - cols 1-3: html / head + body(short) / elements - cols (next row) 1-3 attributes / -->
                         <div class="cols">
                             <!-- all the css topics  -->
                             <h3><a href="https://en.wikipedia.org/wiki/CSS">CSS</a></h3>
@@ -337,7 +332,6 @@
                     <br>
                     <div id="css-close"><h4></h4></div>
                 </section>  
-                <!-- why is this br required? -->
                 <br>
                 <!-- GitHub guide -->
                 <section id="github">
@@ -465,7 +459,7 @@
                             <br>
                             <p>
                                 To stage a file is simply to prepare it for a commit. Git, with its index allows you to commit 
-                                only certain parts of the changes you’ve done since the last commit. <br><br>
+                                only certain parts of the changes you've done since the last commit. <br><br>
                                 STAGING file changes : <br>
 
                                 git add -A <br>
@@ -538,7 +532,6 @@
                                  - thanks to my experience with Python.
                                 <br>
                             </p>
-                            <!-- example syntax -->
                             <img src="./assets/img/png/snippets/js_example.png" alt="javascript code snippet">
                             <br>
                             <br>
@@ -748,11 +741,6 @@
                 </section>
             <!-- end boxes -->
             </div>
-            <!-- bio-quote -->
-            <!-- <div class="quote">
-                <h1><em>"Live as if you were to die tomorrow.<br>
-                    Learn as if you were to live forever."</em></h1>
-            </div> -->
             <!-- bio and skills section -->
             <div class="btm-container">
                 <!-- bio card -->
@@ -831,7 +819,7 @@
                 </ul>
             </div>
         </footer>
-        <!-- better to script files at the end to ensure no conflicts with the html -->
+        <!-- scripts -->
         <script src="./assets/scripts/main.js"></script>
         <script src="./accordian.js"></script>
     </body>
