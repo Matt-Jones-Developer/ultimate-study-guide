@@ -94,7 +94,8 @@ body {
 }
 
 .header-searchbar {
-    padding-top: 4.7rem;
+    padding-top: 5rem;
+    border-radius: 10px;
     float: right;
 }
 
