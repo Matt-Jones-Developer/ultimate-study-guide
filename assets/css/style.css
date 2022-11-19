@@ -380,7 +380,7 @@ section h2:before {
     column-count: 3;
     column-gap: 4rem;
     column-width: 25%;
-    column-rule: 1px groove #5FCFBE;
+    column-rule: 2px groove #5FCFBE;
     /* position: relative; */
     margin: 1rem auto;
     padding: 1rem 1rem;
