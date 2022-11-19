@@ -1,3 +1,10 @@
+// IF username not set; trigger welcome alert 
+
+// else; 
+
+// Display anti-boomer welcome message!
+// alert('Welcome to Ultimate Study Guide!  Please enter a username to get started.')
+
 // create vars for button and heading 
 let myBtn = document.querySelector('button');
 
@@ -24,9 +31,14 @@ function setUserName() {
 }
 
 // call the function on-load 
+// if localstorage has name - call setUserName()
 if (!localStorage.getItem('name')) {
+    // update user with welcome alert
+    // Display anti-boomer welcome message!
+    alert('Welcome to Ultimate Study Guide!\nPlease enter a username to get started.');
     setUserName();
 } else {
+    // else retrieve stored name and display it
     let storedName = localStorage.getItem('name');
     welcomeHeading.innerHTML = 'Welcome,  ' + storedName + '!';
 }
