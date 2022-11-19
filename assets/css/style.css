@@ -94,7 +94,7 @@ body {
 }
 
 .header-searchbar {
-    padding-top: 5rem;
+    padding-top: 6rem;
     border-radius: 10px;
     float: right;
 }
@@ -851,7 +851,8 @@ button.accordion {
     }
 
     .header-welcome {
-        width: 60%;
+        width: 70%;
+        height: 6rem;
         margin-right: 0;
         /* border: 1px solid yellow; */
     }
@@ -859,7 +860,7 @@ button.accordion {
     .header-searchbar {
         border-radius: 10px;
         height: 1rem;
-        width: 40%;
+        width: 50%;
         float: right;
         margin-right: 0;
         /* border: 1px solid red; */
@@ -874,8 +875,8 @@ button.accordion {
         width: 75%;
         height: 1.8rem;
         padding-left: 1rem;
-        margin-left: 0rem;
-        margin-right: 0px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     /* for topics! */
@@ -952,9 +953,9 @@ button.accordion {
     .header-searchbar {
         border-radius: 10px;
         height: 1rem;
-        width: 40%;
+        width: 50%;
         float: right;
-        margin-right: -10px;
+        margin-right: -20px;
         /* border: 1px solid red; */
     }
     
@@ -968,41 +969,7 @@ button.accordion {
         height: 1.8rem;
         padding-left: 1rem;
         margin-left: 0rem;
-        margin-right: 0;
-    }
-}
-
-
-@media (max-width: 330px) {
-
-    .hero-top h2 {
-        font-size: 16px;
-    }
-
-    .hero-bottom h2 {
-        margin: 0 auto;
-        padding: .5rem;
-        padding-bottom: 0;
-    }
-
-    .header-searchbar {
-        padding-top: 9.5rem;
-        border-radius: 10px;
-        float: right;
-    }
-    
-    #searchbar{
-        margin-right: 1rem;
-        padding:2rem;
-        border-radius: 10px;
-      }
-
-    input[type=text] {
-        width: 70%;
-        height: 2rem;
-        padding-left: 1rem;
-        margin-left: 1.5rem;
-        margin-right: 0;
+        margin-right: 0px;
     }
 
     .footer {
@@ -1011,3 +978,9 @@ button.accordion {
     }
 }
 
+@media (max-width: 320px) {
+
+    .header-searchbar {
+        margin-right: -10px;
+    }
+}
