@@ -850,23 +850,31 @@ button.accordion {
         padding-bottom: 0;
     }
 
+    .header-welcome {
+        width: 60%;
+        margin-right: 0;
+        /* border: 1px solid yellow; */
+    }
+
     .header-searchbar {
-        padding-top: 9rem;
         border-radius: 10px;
+        height: 1rem;
+        width: 40%;
         float: right;
+        margin-right: 0;
+        /* border: 1px solid red; */
     }
     
     #searchbar{
-        margin-right: 1rem;
-        padding:2rem;
+        margin: 0;
         border-radius: 10px;
       }
 
     input[type=text] {
-        width: 70%;
+        width: 75%;
         height: 1.8rem;
         padding-left: 1rem;
-        margin-left: 2rem;
+        margin-left: 0rem;
         margin-right: 0px;
     }
 
@@ -933,6 +941,36 @@ button.accordion {
     }
 }
 
+@media (max-width: 377px) {
+
+    .header-welcome {
+        width: 60%;
+        margin-right: 0;
+        /* border: 1px solid yellow; */
+    }
+
+    .header-searchbar {
+        border-radius: 10px;
+        height: 1rem;
+        width: 40%;
+        float: right;
+        margin-right: -10px;
+        /* border: 1px solid red; */
+    }
+    
+    #searchbar{
+        margin: 0;
+        border-radius: 10px;
+      }
+
+    input[type=text] {
+        width: 65%;
+        height: 1.8rem;
+        padding-left: 1rem;
+        margin-left: 0rem;
+        margin-right: 0;
+    }
+}
 
 
 @media (max-width: 330px) {
@@ -963,7 +1001,7 @@ button.accordion {
         width: 70%;
         height: 2rem;
         padding-left: 1rem;
-        margin-left: 1rem;
+        margin-left: 1.5rem;
         margin-right: 0;
     }
 
