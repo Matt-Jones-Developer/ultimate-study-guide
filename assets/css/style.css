@@ -108,6 +108,7 @@ body {
 input[type=text] {
     width: 80%;
     height: 2.1rem;
+    margin-left: 0px;
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: 10px;
@@ -143,6 +144,7 @@ button:hover {
 .btn-user {
     font-family: 'Poppins', sans-serif;
     padding: 0 1rem;
+    height: 2rem;
 }
 
 h1 {
@@ -716,7 +718,27 @@ button.accordion {
         font-size: 18px;
     } 
 
-    .accordian-container {
+    .header-searchbar {
+        padding-top: 5rem;
+        border-radius: 10px;
+        float: right;
+    }
+    
+    #searchbar{
+        margin-right: 1rem;
+        padding:2rem;
+        border-radius: 10px;
+      }
+
+    input[type=text] {
+        width: 70%;
+        height: 1.8rem;
+        padding-left: 1rem;
+        margin-left: 3rem;
+        margin-right: 0;
+    }
+
+    .accordion-container {
         margin: 1rem 2rem;
         padding: 1rem;
     }
@@ -772,7 +794,7 @@ button.accordion {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 415px) {
 
     .header-top {
         margin: 0 auto;
@@ -828,6 +850,26 @@ button.accordion {
         padding-bottom: 0;
     }
 
+    .header-searchbar {
+        padding-top: 9rem;
+        border-radius: 10px;
+        float: right;
+    }
+    
+    #searchbar{
+        margin-right: 1rem;
+        padding:2rem;
+        border-radius: 10px;
+      }
+
+    input[type=text] {
+        width: 70%;
+        height: 1.8rem;
+        padding-left: 1rem;
+        margin-left: 2rem;
+        margin-right: 0px;
+    }
+
     /* for topics! */
     .boxes {
         display: block;
@@ -840,7 +882,7 @@ button.accordion {
         padding: 2rem;
     } */
 
-    .accordian-container {
+    .accordion-container {
         margin: 1rem 0;
     }
 
@@ -893,7 +935,8 @@ button.accordion {
 
 
 
-@media (max-width: 340px) {
+@media (max-width: 330px) {
+
     .hero-top h2 {
         font-size: 16px;
     }
@@ -902,6 +945,26 @@ button.accordion {
         margin: 0 auto;
         padding: .5rem;
         padding-bottom: 0;
+    }
+
+    .header-searchbar {
+        padding-top: 9.5rem;
+        border-radius: 10px;
+        float: right;
+    }
+    
+    #searchbar{
+        margin-right: 1rem;
+        padding:2rem;
+        border-radius: 10px;
+      }
+
+    input[type=text] {
+        width: 70%;
+        height: 2rem;
+        padding-left: 1rem;
+        margin-left: 1rem;
+        margin-right: 0;
     }
 
     .footer {
