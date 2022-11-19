@@ -41,3 +41,20 @@ if (!localStorage.getItem('name')) {
 myBtn.onclick = () => {
     setUserName();
 }
+
+// searchbar feature
+
+function highlight(param) {
+
+    // Select the whole paragraph
+    var ob = new Mark(document.querySelector(".searchable"));
+
+    // First unmark the highlighted word or letter
+    ob.unmark();
+
+    // Highlight letter or word
+    ob.mark(
+        document.getElementById("searched").value,
+        { className: 'a' + param }
+    );
+}

@@ -7,6 +7,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,800,900'">
         <script src="https://kit.fontawesome.com/6f088b358c.js" crossorigin="anonymous"></script>
+        <!-- CDN of fontawesome -->
+	    <link rel="stylesheet" href=
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- CDN of mark.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"
+            integrity=
+        "sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww=="
+        crossorigin="anonymous">
+        </script>
         <link rel="shortcut icon" type="image/png" href="./assets/img/icn/icn_rocket_wht.svg">
         <link href="./assets/css/style.css" rel="stylesheet">
         <title>Study Guide</title>
@@ -28,9 +37,19 @@
                 <!-- header-welcome and searchbar -->
                 <div class="header-welcome">
                     <h2 id="user">Welcome, User!</h2>
-                    <button>Change User</button>
+                    <button class="btn-user">Change User</button>
                 </div>
-                <div class="header-searchbar">[searchbar - todo]</div>
+                <div class="header-searchbar">
+                    <!-- searchbar input -->
+                    <input class="searchbar" id="searched" onkeyup="search_site()" type="text"
+                    name="search" placeholder="search anything here...">
+                    <!-- awesome font button -->
+                    <button type="button" class="btn-search"
+                     onclick="highlight('0');">
+                    <!-- add magnifier icon -->
+                    <i class="fa fa-search"></i>
+                </button>
+                </div>
             </div>
         </header>
         <main>
@@ -66,16 +85,16 @@
                 <h2>Seek and you shall find...</h2>
             </div> -->
             <!-- 4 sections/box shadows -->
-            <div class="boxes">
+            <div id="boxes" class="searchable">
                 <!-- topics -->
                 <!-- html guide -->
                 <section id="html" class="container">
                     <!-- entities -->
                     <h1>&lt;html&gt;</h1>
                     <h2 class="topic-title"> Topics</h2><hr><br>
-                    <!-- accordian fan to break up the content on mobile devices! -todo -->
+                    <!-- accordion fan to break up the content on mobile devices! -todo -->
                     <!-- <button class="accordion">HTML Content</button> -->
-                    <div class="accordian-container">
+                    <div class="accordion-container">
                         <div class="cols">
                             <!-- all the html topics  -->
                             <h3><a href="https://en.wikipedia.org/wiki/HTML">HTML</a></h3>
@@ -231,7 +250,7 @@
                     <!-- entities -->
                     <h1>CSS</h1>
                     <h2 class="topic-title"> Topics</h2><hr><br>
-                    <div class="accordian-container">
+                    <div class="accordion-container">
                         <div class="cols">
                             <!-- all the css topics  -->
                             <h3><a href="https://en.wikipedia.org/wiki/CSS">CSS</a></h3>
@@ -338,7 +357,7 @@
                     <h1>GitHub</h1>
                     <h2 class="topic-title"> Topics</h2>
                     <hr><br>
-                    <div class="accordian-container">
+                    <div class="accordion-container">
                         <div class="cols">
                             <!-- all the github topics  -->
                             <h3><a href="https://en.wikipedia.org/wiki/github">GitHub</a></h3>
@@ -514,7 +533,7 @@
                     <h1>JavaScript</h1>
                     <h2 class="topic-title"> Topics</h2>
                     <hr><br>
-                    <div class="accordian-container">
+                    <div class="accordion-container">
                         <!-- all the js topics  -->
                         <div class="cols">
                             <h3><a href="https://en.wikipedia.org/wiki/javascript">JavaScript</a></h3>

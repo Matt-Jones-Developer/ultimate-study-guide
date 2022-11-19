@@ -94,23 +94,54 @@ body {
 }
 
 .header-searchbar {
-    padding-top: 4rem;
+    padding-top: 4.7rem;
     float: right;
 }
 
+#searchbar{
+    margin-right: 1rem;
+    padding:2rem;
+    border-radius: 10px;
+  }
+
+input[type=text] {
+    width: 80%;
+    height: 2.1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    /* make slide in from right to left? -todo */
+    /* -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out; */
+}
+
+
 button {
-    font-family: 'Poppins', sans-serif;
-    background-color: #555;
     border-radius: .5rem;
-    border: 0px;
+    border: none;
+    background-color: #555;
     color: #fff;
-    margin: 1rem 0;
-    padding: 0 1rem;
     cursor: pointer;
+    margin: 1rem 0;
 }
 
 button:hover {
     background-color: #5FCFBE;
+}
+
+.btn-search {
+    margin: 5px 10px;
+    margin-right: 0;
+    padding-right: 1rem;
+    padding: 0 .7rem;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.btn-user {
+    font-family: 'Poppins', sans-serif;
+    padding: 0 1rem;
 }
 
 h1 {
@@ -222,8 +253,14 @@ main {
     /* border: 1px solid red; */
 }
 
-.boxes {
+#boxes {
     margin: 0;
+}
+
+mark.a0 {
+    color: black;
+    padding: 5px;
+    background: greenyellow;
 }
 
 hr {
@@ -295,7 +332,7 @@ code {
     background: red;
   } */
 
-.accordian-container {
+.accordion-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -315,7 +352,7 @@ code {
     transition: max-height 0.2s ease-in-out;
 }
 
-.accordian-container h3 {
+.accordion-container h3 {
     font-size: 24px;
 }
 
