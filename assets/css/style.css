@@ -262,7 +262,7 @@ main {
 
 mark.a0 {
     color: black;
-    padding: 5px;
+    padding: 0px 5px;
     background: greenyellow;
 }
 
@@ -349,7 +349,7 @@ code {
     /* width: 100%; */
     /* transition: 0.5s; */
     /* border: 1px solid red; */
-    /* disable until accordian todo */
+    /* disable until accordion todo */
     /* max-height: 0; */
     overflow: hidden;
     transition: max-height 0.2s ease-in-out;
