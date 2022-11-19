@@ -1,9 +1,3 @@
-// IF username not set; trigger welcome alert 
-
-// else; 
-
-// Display anti-boomer welcome message!
-// alert('Welcome to Ultimate Study Guide!  Please enter a username to get started.')
 
 // create vars for button and heading 
 let myBtn = document.querySelector('button');
