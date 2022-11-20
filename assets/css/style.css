@@ -39,6 +39,10 @@ body {
     width: 100vw;
 }
 
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome only */
+}
+
 #top {
     background-color: #000024;
     margin: 0 auto;
