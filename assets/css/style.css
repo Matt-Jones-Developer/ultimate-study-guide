@@ -64,9 +64,6 @@ body::-webkit-scrollbar {
 
 .header-title {
     margin-left: 0;
-    /* margin-left: 2rem; */
-    padding-left: 5rem;
-    /* border: 1px solid greenyellow; */
 }
 
 .header-title h1, h2, h3 {
